@@ -65,6 +65,3 @@ DEPENDENCIES
   jekyll
   serve
   sinatra
-
-BUNDLED WITH
-   1.13.1
