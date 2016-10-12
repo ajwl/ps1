@@ -9,16 +9,6 @@ categories: []
 tags:
 - css
 - web development
-meta:
-  _oembed_3ec7ae5ad06dfd64b2e9a6e101ddfd2e: "{{unknown}}"
-  _oembed_cebe1d19a12b8740d9a3c1d379621499: "{{unknown}}"
-  meta_description: ''
-  _edit_last: '1'
-  _oembed_152b13f09c0a06cb1c2bb57f1a02770c: "{{unknown}}"
-  _oembed_67455ed9922d6debb1f0c2b9d335fff0: "{{unknown}}"
-  _oembed_c0bb36390f4def9d235078a59ffcba40: "{{unknown}}"
-  _oembed_5cd7d235763c374197b87b32e326143f: "{{unknown}}"
-  _googl_shortlink: ''
 author: annaleach
 
 
