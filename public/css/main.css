@@ -25,6 +25,12 @@ h1 {
   margin: 0 0 .2em 0;
 }
 
+a svg:hover #twitter,
+a svg:hover #github,
+a svg:hover #linkedin {
+ fill: #32CD32;
+}
+
 body {
   position: static;
   margin: 0;
@@ -46,7 +52,7 @@ a:visited {
   color: #3232cd;
 }
 
-header img{
+header svg {
   width: 1.5em;
   padding-right: 1em;
 }
