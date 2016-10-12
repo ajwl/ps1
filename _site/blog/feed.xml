@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description></description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 12 Oct 2016 08:45:24 +0100</pubDate>
+    <lastBuildDate>Wed, 12 Oct 2016 08:45:24 +0100</lastBuildDate>
+    <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 27 Sep 2016 08:24:38 +0100</pubDate>
+        <link>/blog/jekyll/update/2016/09/27/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">/blog/jekyll/update/2016/09/27/welcome-to-jekyll.html</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>CSS Layout: doing it three ways</title>
+        <description>&lt;p&gt;When I started doing CSS, and coolly switching background-colors with a word or two, I was horrified to discover that layouts are so difficult.&lt;/p&gt;
+
+&lt;p&gt;After all, I thought, &lt;strong&gt;layouts were the whole damn point of CSS&lt;/strong&gt; in the first place. Well, turns out they’re a lot easier now than they were 10 years ago. But even then, they’re not that easy.&lt;/p&gt;
+
+&lt;p&gt;It’s why people use&lt;a href=&quot;http://getbootstrap.com/css/&quot;&gt; bootstrap css&lt;/a&gt; all the time. It just puts shit in the centre of the page and lines it up nicely. And god knows it’s kind of a faff doing it any other way.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://annaleach.net/wp-content/uploads/2016/08/Screen-Shot-2016-08-10-at-22.21.27.png&quot;&gt;&lt;img src=&quot;/assets/Screen-Shot-2016-08-10-at-22.21.27.png&quot; alt=&quot;UL in html&quot; /&gt;&lt;/a&gt; &lt;em&gt;That’s supposed to become a navigation bar? Turning a UL element into a navigation bar requires more heavy-lifting in CSS than you would hope&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt; &lt;/p&gt;
+
+&lt;p&gt;One of the tasks I set myself on github was to create the “holy grail” of web design - a responsive three column layout with a navigation bar at the top. But I decided to do it three times over.&lt;/p&gt;
+&lt;h2 id=&quot;once-with-float-and-blockinline-block-properties&quot;&gt;1. Once with ‘float’ and ‘block/inline-block’ properties&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://htmlpreview.github.io/?https://github.com/ajwl/holy-grail-3-ways/blob/master/float/float.html&quot;&gt; » View Float Website&lt;/a&gt;This is the classic way of doing CSS layout right now, it’s widely-supported and responsive. Just about.&lt;/p&gt;
+&lt;h2 id=&quot;a-second-time-with-flexbox&quot;&gt;2. A second time with flexbox&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://htmlpreview.github.io/?https://github.com/ajwl/holy-grail-3-ways/blob/master/flexbox/grail.html&quot;&gt; » View Flexbox Website&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes&quot;&gt;Flexbox spec is described here on MDN&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;a-third-time-with-grid&quot;&gt;3. A third time with grid&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://htmlpreview.github.io/?https://github.com/ajwl/holy-grail-3-ways/blob/master/grid/grail.html&quot;&gt; » View Grid Website&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Grid is an experimental CSS property that, yes produces grids. Nice flexible grids, with hardly any code needed at all. I really like this one.&lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/CSS/grid&quot;&gt; Grid is described here on MDN.&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To view this site you need to go into Chrome or whichever browser you are using and enable experimental features: Paste &lt;em&gt;chrome://flags&lt;/em&gt; into the URL bar and scroll down to the option to Enable experimental Web Platform features.&lt;/p&gt;
+
+&lt;p&gt;I also delve into some fun CSS transitions and transforms because why the hell not. I really like skew.&lt;/p&gt;
+
+&lt;p&gt;See the code: &lt;a href=&quot;https://github.com/ajwl/holy-grail-3-ways&quot;&gt; The Holy Grail - 3 ways on Github&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 10 Aug 2016 22:22:38 +0100</pubDate>
+        <link>/blog/2016/08/10/css-layout-doing-it-three-ways.html</link>
+        <guid isPermaLink="true">/blog/2016/08/10/css-layout-doing-it-three-ways.html</guid>
+        
+        <category>css</category>
+        
+        <category>web development</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Woah: this piece of glass is sucking information from the air</title>
+        <description>&lt;p&gt;Good woooooah moment in episode 110 of &lt;a href=&quot;http://thewebahead.net&quot;&gt;The Web Ahead podcast&lt;/a&gt;, that I listened to today.&lt;/p&gt;
+
+&lt;p&gt;Jen Simmons was describing the wonders of the mobile web.&lt;/p&gt;
+&lt;blockquote&gt;
+
+  &lt;p&gt;“that website works on a tiny little piece of glass, there’s some sort of radio wave beaming out of the sky and that’s changing what you see on the piece of glass.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;17:45, &lt;a href=&quot;http://thewebahead.net/110&quot;&gt;Understanding the Web with Jeremy Keith&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://annaleach.net/wp-content/uploads/2016/08/wow-cat-1.jpg&quot;&gt;&lt;img src=&quot;/assets/wow-cat-1-300x243.jpg&quot; alt=&quot;wow cat&quot; /&gt;&lt;/a&gt; omgerz itz so true&lt;/p&gt;
+
+&lt;p&gt;Sometimes its good to remember how crazily amazing the internet is. It’s easy to forget that when you’re moaning about Safari being slow. If you think about it, we’re holding these pieces of glass that are sucking information from the air around us.&lt;/p&gt;
+
+&lt;p&gt;I really like listening to the Web Ahead, a front-end / web dev podcast by Jen Simmons.&lt;/p&gt;
+
+&lt;p&gt;Aside from from acquiring genuinely useful knowledge from this podcast, I also vibe on her gravelly drawl and constant incitement for everyone to do ever more crazy things with the idea of a website.&lt;/p&gt;
+
+&lt;p&gt;She and her guests often talk about how everyone plays it so safe in web design and development, and that psychological constraints hold people back much more than technical ones.&lt;/p&gt;
+
+&lt;p&gt;The podcast is what got me playing around with skew and transitions as per CSS post above.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Listen to it! &lt;a href=&quot;http://thewebahead.net/&quot;&gt;The Web Ahead&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 10 Aug 2016 21:30:15 +0100</pubDate>
+        <link>/blog/2016/08/10/woah-this-piece-of-glass-is-sucking-information-from-the-air.html</link>
+        <guid isPermaLink="true">/blog/2016/08/10/woah-this-piece-of-glass-is-sucking-information-from-the-air.html</guid>
+        
+        <category>web development</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>8 things I didn’t realise about development before I started working in it</title>
+        <description>&lt;p&gt;I’ve been learning Javascript in evening classes and weekends for the last two years. It wasn’t always easy to fit in the practice alongside my old job, running a 5-strong team on Ampp3d.&lt;/p&gt;
+
+&lt;p&gt;But anyway I made a jquery widget where my head bounced around a webpage and a customised game about my colleague Conrad’s insistence on margin alignment. It wasn’t a threat to Grand Theft Auto, but anyway.&lt;/p&gt;
+
+&lt;p&gt;Javascript was fun, I was hooked. It was like when I learned photoshop but 10 times better. It moved. I could do so much more than paste speech bubbles on people’s faces, or write 300 words in the middle of a page. I’ve been code-curious since starting work as a tech journalist back in 2009, but it was four years before I actually got up the motivation to start learning it.&lt;/p&gt;
+
+&lt;p&gt;If you are interested in my code journey it is this:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;MY CODE JOURNEY&lt;/strong&gt;- Do Codeacademy courses on HTML, CSS, Javascript and Jquery- Buy a book on Javascript and work through all the exercises- Make a few small terrible games- Do 2 x 10 week evening courses on Javascript at City University- Start learning PHP. Stop learning PHP because it is a nightmare- Get a job as a UX designer and developer, via the Silicon Milk Roundabout recruitment fair- Start to learn Ruby and D3.js- Get job changed to Web Developer- Continue to learn Ruby and D3.js- After that I also want to learn Python, Angular.js and Node.js, C++ and iOS programming&lt;/p&gt;
+
+&lt;p&gt;Throughout this process I also read several books on the bigger concepts behind programming and computers, endless Quora articles about which language is the best language and various inspirational articles about people who thought they couldn’t learn to code and then they did learn to code.&lt;/p&gt;
+
+&lt;p&gt;I also went to Meetup groups some very good, some less good.&lt;/p&gt;
+
+&lt;p&gt;Anyway.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Now that I’m there, here are 8 things that surprised me about technology and the tech industry&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;**1. Developers talk about communicating with each other ALL THE TIME **&lt;/p&gt;
+
+&lt;p&gt;Functional, gruff technical types – just getting on with it? No developers talk to each other all the time. And they talk about communicating with each other all the time too. It’s almost tender.&lt;/p&gt;
+
+&lt;p&gt;No newsroom has ever witnessed men talking so much to each other about communication problems.&lt;/p&gt;
+
+&lt;p&gt;**2. You do not need a maths degree. **You barely need a Key Stage 3 in it. Sure it depends what kind of programming you’re doing, but if you remember a bit of geometry, understand that this “&amp;gt;”  means “greater than”, then for a lot of coding you can figure the rest out on the fly.&lt;/p&gt;
+
+&lt;p&gt;You do need to understand basic logic – yes - but the kind of logic which you use when deciding whether to go to the shops after work or not.&lt;/p&gt;
+&lt;blockquote&gt;
+
+  &lt;p&gt;if (food in house) {go home} else { go to shop}&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The rest of learning code is just remembering how you have to write things.&lt;/p&gt;
+
+&lt;p&gt;When I learn code I’m channelling the part of me that loved learning foreign languages. Like human languages. Like French. Syntax and then just learning the way you have to write things.&lt;/p&gt;
+
+&lt;p&gt;Any sub-editors reading? The other half of code is all about the anal attention to detail that makes a great sub-editor:  “That lineation is wrong – there’s a missing semi-colon” etc etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. The worst thing to be is “not agile”&lt;/strong&gt;You can make mistakes in your code, you can fall behind on your sprint goals. But when it’s bad, people will screw their mouth up, and say “um well thing is, that’s not very agile.” I didn’t really know what agile was before. But by god, if you want to work on code projects or even really talk to coders in any professional capacity you should learn what agile is. Just read about it. You’ll get the gist.&lt;/p&gt;
+
+&lt;p&gt;**4. Agile is really great so you should be agile anyway **Before joining tech world, I had the impression that agile was just a fancy techie way of saying you have meetings every so often. But it’s kind of a philosophy / life choice. Honestly, read about it.&lt;/p&gt;
+
+&lt;p&gt;**5. There are lots of terrible mixed metaphors **Okay one bad thing about Agile is the language in it:For two weeks you are on sprint, but every morning you have a standup, where the scrum master passes a ball around. In the sprint you can be a pig or a chicken.  In the sprint there are stories. During the sprint the pigs will move these stories from the backlog to acceptance, to done. And then usually done done.&lt;/p&gt;
+
+&lt;p&gt;It starts to sound normal after a few weeks.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6. There is so much work around planning and delivery that requires not one single line of code&lt;/strong&gt;I refer you to point 1, why communication is important.  Also point 4 – you should work in this way. As a side note there are so many jobs in this area of tech I didn’t even know existed. Product owners, Tech Delivery, Product managers, scrum-masters. And projects live or die on how good those people are.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;7. Really, there are few women&lt;/strong&gt;I’d been expecting it. I’d intentionally joined a company where I had not one but two female bosses.But yes I am still shocked by how few women there are. That’s why groups like &lt;a href=&quot;https://www.womenwhocode.com/&quot;&gt;Women Who Code&lt;/a&gt; and &lt;a href=&quot;http://www.womenhackfornonprofits.com/&quot;&gt;Women Who Hack for Non-Profits&lt;/a&gt; are brilliant and a vital supplement.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8. You have to keep learning all the time&lt;/strong&gt;“You go on holiday and your skills are out of date”, a CTO said at one talk I went to. It’s good if you can see that as an opportunity.&lt;/p&gt;
+
+&lt;p&gt;Learn more about your main languages, learn about changes to your languages, learn new languages.&lt;/p&gt;
+
+&lt;p&gt;This is why motivation and interest in self-improvement are actively recruited for in tech jobs. You could be a master of XYZ but they will still need you to learn ABC or a new framework for X and that’s much easier when you want to learn new stuff.&lt;/p&gt;
+
+&lt;p&gt;That’s another reason why self-taught people are welcome in the industry. Teaching yourself to code proves you have that motivation.&lt;/p&gt;
+
+&lt;p&gt;**And finally… **A final thing that surprised me about the tech industry was how much more it is than just code knowledge. Yes that’s the core of it, and one of the most exciting bits. But so many skills are needed around it - management, communication, grasp of details, planning. And I just didn’t know that.&lt;/p&gt;
+
+&lt;p&gt;And the code bit you can learn. If you want to, and you put the work in. I got a job at a recruitment fair, but I’d actively recommend beginner-friendly meetup groups as a good way starting place to get a feel for the industry / skillsets / opportunities out there.&lt;/p&gt;
+
+&lt;p&gt;There are so many opportunities.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 22 Oct 2015 19:22:54 +0100</pubDate>
+        <link>/blog/2015/10/22/8-things-i-didnt-realise-about-development-before-i-started-working-in-it.html</link>
+        <guid isPermaLink="true">/blog/2015/10/22/8-things-i-didnt-realise-about-development-before-i-started-working-in-it.html</guid>
+        
+        <category>javascript</category>
+        
+        <category>web development</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>9 things I learned from doing mainstream data journalism</title>
+        <description>&lt;p&gt;I was the editor of the Mirror’s data blog &lt;a href=&quot;http://www.mirror.co.uk/news/ampp3d/?pageNumber=3&quot;&gt;Ampp3d&lt;/a&gt; for a year. These are some things I learned trying to make data journalism mainstream.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Interactives make an enormous amount of sense as a doorway to a big spreadsheet.&lt;/strong&gt; They allow for that great kicker for a story – personalisation. A general story about crime figures not catching your attention? How about knife attacks on your route home from work - you’re more interested. Interactives are a natural tool for data journalists.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. People love real-time.&lt;/strong&gt; Even fake real time. Though it’s only the big numbers it really works for. You know that urban legend – if Bill Gates dropped a $50 dollar bill it wouldn’t be worth his time to bend down and pick it up, because he’d already have made twice that in interest in the 10 seconds it would take him.&lt;/p&gt;
+
+&lt;p&gt;One of our biggest hits was &lt;a href=&quot;http://ampp3d.mirror.co.uk/2014/02/21/wayne-rooney-earnings/&quot;&gt;basically a visualisation of that&lt;/a&gt;, with a different millionaire.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://annaleach.net/wp-content/uploads/2015/09/Screen-Shot-2015-09-01-at-22.32.40.png&quot;&gt;&lt;img src=&quot;/assets/Screen-Shot-2015-09-01-at-22.32.40.png&quot; alt=&quot;Screen Shot 2015-09-01 at 22.32.40&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;**3. Polls and quizzes are great and there is no reason you can’t use a question and answer format to deal with complex and weighty topics. **&lt;/p&gt;
+
+&lt;p&gt;This story – &lt;a href=&quot;http://www.mirror.co.uk/news/ampp3d/home-office-think-youre-gay-5280895&quot;&gt;Does the Home Office Think You’re Gay?&lt;/a&gt; – was more new formats than data journalism. But quizzes are another good way to find yourself in the dataset, in the news story. Even to build empathy by putting you into the mindset of the participant – in this case a gay refugee. For a nominally small story about a gay asylum seeker this “Does the Home Office think you’re gay?” Quiz actually beat out Kim Kardashian to make the most top 5 most read on the Mirror’s site.&lt;a href=&quot;http://annaleach.net/wp-content/uploads/2015/09/gay-enough.jpg&quot;&gt;&lt;img src=&quot;/assets/gay-enough.jpg&quot; alt=&quot;gay-enough&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4. I think you should sit next to your developer.&lt;/strong&gt; Not least so you can draw things on bits of A4 and generally keep on top of what they are doing. Just saying “oh make a tool to go with the ONS dataset” has from experience, turned out not to work. So &lt;a href=&quot;https://storify.com/charlesarthur/great-truths-of-our-time&quot;&gt;to contribute to this debate&lt;/a&gt; - yes - sit next to them.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5. Think about UX and keep the message simple.&lt;/strong&gt; One of the reasons it was interesting to work with my old boss &lt;a href=&quot;http://martinbelam.com/&quot;&gt;Martin Belam&lt;/a&gt; was that he brought in a UX background that is rare in journalism. One general tip. Keep things devastatingly simple. This was our most shared graph ever. And let me tell you we did a lot of graphs.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://annaleach.net/wp-content/uploads/2015/09/housing_benefit_money.jpg&quot;&gt;&lt;img src=&quot;/assets/housing_benefit_money-300x150.jpg&quot; alt=&quot;Ampp3d graph on housing benefit&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;6. Deal with the mobile screen.&lt;/strong&gt; It’s long. Writing for mobile not desktop is increasingly becoming the norm. But it’s more than just putting things in one column, you can really make the format work for you.&lt;/p&gt;
+
+&lt;p&gt;Another UX / screen design thing Martin did once or twice which I really loved is making a kind of comic strip that runs vertically down the page and so reveals as you scroll down it. EG. This &lt;a href=&quot;http://ampp3d.mirror.co.uk/2014/01/07/that-gove-effect-on-teacher-morale-in-full/&quot;&gt;story about the effect Tory education minister Michael Gove had on teacher morale&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It makes space part of the story.&lt;/p&gt;
+
+&lt;p&gt;We did it sometimes with images where you redo a photo or graph several times with more notes on it each time. Again the idea is it reveals the narrative as you scroll. Yes, Buzzfeed’s lists basically work like this, but this takes it further.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;7. Of course you should annotate graphs.&lt;/strong&gt; You’re a journalist – you’re telling a story. Use the graph to tell a story. Thanks&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://annaleach.net/wp-content/uploads/2015/09/Welfare-spending-template.jpg&quot;&gt;&lt;img src=&quot;/assets/Welfare-spending-template.jpg&quot; alt=&quot;Ampp3d graph benefits cuts in full&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8. You still need to write well.&lt;/strong&gt; In this day and age people expect you to scrape, know deep level excel, use Photoshop, perhaps javascript. But you still need to write well. Journalism is still mainly writing and that – combined with recognising a good story - are still the two core skills that inform whatever format your story plays out in.&lt;/p&gt;
+
+&lt;p&gt;**9. Developing can be extremely creative. **The games on our sister site &lt;a href=&quot;http://usvsth3m.com/&quot;&gt;UsVsTh3m&lt;/a&gt; plus some of the widgets we managed to produce on Ampp3d really opened my eyes to how creative coding and developing can be. After all it’s fun to control the whole page, rather than just the 600 words in the middle of it.&lt;/p&gt;
+
+&lt;p&gt;That plus a few macroeconomic factors affecting the journalism industry are the main reasons I decided to make the switch into becoming a developer when Ampp3d was &lt;a href=&quot;http://www.theguardian.com/media/2015/may/13/trinity-mirrors-usvsth3m-and-ampp3d-thought-to-be-facing-axe-as-jobs-set-to-go&quot;&gt;shut down in June 2015&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;[Thanks David Stevenson for the beautiful graphs above, and more, and Federica Cocco and Sophie Warnes.]&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Sep 2015 23:11:18 +0100</pubDate>
+        <link>/blog/2015/09/01/9-things-i-learned-from-trying-to-do-mainstream-data-journalism.html</link>
+        <guid isPermaLink="true">/blog/2015/09/01/9-things-i-learned-from-trying-to-do-mainstream-data-journalism.html</guid>
+        
+        <category>Ampp3d</category>
+        
+        <category>data journalism</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>David Foster Wallace on &quot;good&quot; journalism's big problem</title>
+        <description>&lt;p&gt;David Foster Wallace is one of my all-time favourite writers. Though sometimes he can be a gruelling read &lt;a href=&quot;http://clickholeofficial.tumblr.com/post/126927561062/wow&quot;&gt;as this recent clickhole post featuring an incredibly bleak quote from him&lt;/a&gt; nicely illustrates.&lt;/p&gt;
+
+&lt;p&gt;His thoughts about modern journalism are a little depressing too…&lt;/p&gt;
+
+&lt;p&gt;Anyway. I’ve finally got round to &lt;strong&gt;The Pale King&lt;/strong&gt;, his unfinished last book about the IRS, the American tax service. I knew this would have interesting insights about data overload, boredom and attention. It really does. Here’s one. I think it sums up one of journalism’s big problems in this modern era - being boring.&lt;/p&gt;
+&lt;blockquote&gt;
+
+  &lt;p&gt;“Consider from the Service’s perspective, the advantages of the dull, the arcane, the mind-numbingly complex.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;“The IRS was one of the first government agencies to learn that such qualities help insulate themselves against public protest and political opposition, and that abstruse dullness is actually a much more effective shield than secrecy.&lt;/p&gt;
+
+&lt;p&gt;“For the great disadvantage of secrecy is that it’s interesting. People are drawn to secrets; they can’t help it.”&lt;/p&gt;
+
+&lt;p&gt;_[p.85 in the Penguin paperback edition]_You get the gist. There are two problems:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Finding the story in the first place in a tsunami of excruciating detail.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;And if you do find a story, telling it in a way that doesn’t drown the reader in facts and jargon and make them click off your story and onto a witty story about Tinder or a bear. Good luck.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;—–The rest of the quote, since it’s all so good:&lt;/p&gt;
+&lt;blockquote&gt;
+
+  &lt;p&gt;“Had the Service tried to cover up or hide its conflicts and convulsions, some enterprising journalist(s) could have done an expose that drew a lot of attention and interest and scandalous fuss. But this is not at all what happened. What happened was that much of the high-level policy debate played out for two years in full public view […]&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;“Even in the financial press, there was hardly any coverage; can you guess why? If not, consider the fact that just about every last transcript, record, study, white paper, code amendment, revenue ruling, and procedural memo has been available for public perusal since date of issue. No FOIA filing even required. But not one journalist seems to have ever checked them out, and with good reason: This is stuff is solid rock. The eyes roll up white by the third or fourth. You just have no idea.”&lt;/p&gt;
+</description>
+        <pubDate>Tue, 01 Sep 2015 22:25:51 +0100</pubDate>
+        <link>/blog/2015/09/01/david-foster-wallace-on-good-journalisms-big-problem.html</link>
+        <guid isPermaLink="true">/blog/2015/09/01/david-foster-wallace-on-good-journalisms-big-problem.html</guid>
+        
+        <category>data journalism</category>
+        
+        <category>david foster wallace</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Is data journalism dead? The NYT thinks so. My thoughts from last year</title>
+        <description>&lt;p&gt;I was interested to see that The New York Times’ data journalism blog the Upshot recently published a piece called ‘&lt;a href=&quot;http://www.nytimes.com/2015/06/20/upshot/death-to-data-journalism.html?abt=0002&amp;amp;abg=0&quot;&gt;Death to Data Journalism&lt;/a&gt;’. This is a key sentence:&lt;/p&gt;
+&lt;blockquote&gt;
+
+  &lt;p&gt;You’ll notice that at least a couple of us find the phrase “data journalism” to be a bit strange.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Data journalism, ultimately, has the same aim as “quote journalism” and “anecdote journalism.” They all aspire to be “fact journalism” or, more eloquently, journalism.&lt;/p&gt;
+
+&lt;p&gt;So regardless of the source - journalism is journalism. It’s what I said in &lt;a href=&quot;https://www.journalism.co.uk/news/the-tricky-line-in-tabloid-data-journalism-lessons-from-one-year-of-ampp3d/s2/a563530/&quot;&gt;this interview I did with journalism.co.uk&lt;/a&gt; about Ampp3d, the data journalism site for the Mirror that I edited.&lt;/p&gt;
+&lt;blockquote&gt;
+
+  &lt;p&gt;Editor Anna Leach told Journalism.co.uk that after a year of working on Ampp3d, she sees data and numbers as just another source for news stories.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;“I don’t think there is something that intrinsically different in data journalism from ‘normal’ journalism and I think it’s a little bit set to one side,” she said.&lt;/p&gt;
+
+&lt;p&gt;“A number is evidence in the same way a quotation is.”&lt;/p&gt;
+
+&lt;p&gt;The dichotomy between data journalism and normal journalism is false in many ways. The division probably reflects different skill sets within the newsroom rather than qualitatively different stories.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 20 Jul 2015 08:13:18 +0100</pubDate>
+        <link>/blog/2015/07/20/is-data-journalism-dead-the-nyt-thinks-so-my-thoughts-from-last-year.html</link>
+        <guid isPermaLink="true">/blog/2015/07/20/is-data-journalism-dead-the-nyt-thinks-so-my-thoughts-from-last-year.html</guid>
+        
+        <category>Ampp3d</category>
+        
+        <category>data journalism</category>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Javascript Game No.3: catch the ball</title>
+        <description>&lt;p&gt;Sure - I haven't thought of a way this could be used to clarify or illustrate a news story yet - but, in the meantime...&lt;/p&gt;
+&lt;div class=&quot;container1&quot;&gt;
+&lt;h1&gt;Can you catch the disco ball?&lt;br /&gt;
+			&lt;/h1&gt;
+&lt;div id=&quot;ball&quot;&gt;
+				&lt;img src=&quot;/assets/disco_ball_3.gif&quot; /&gt;
+			&lt;/div&gt;
+&lt;p id=&quot;result&quot;&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;		&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;br /&gt;
+		&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;&lt;br /&gt;
+                &lt;script src=&quot;http://annaleach.net/wp-content/uploads/2014/09/ball-for-annaleach2.js&quot;&gt;&lt;br /&gt;
+		&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;This is a bit tidier than some of my other efforts. &lt;/p&gt;
+&lt;p&gt;I copied a lot of the bounce-off-the-edges code from &lt;a href=&quot;http://jsfiddle.net/2TUFF/&quot;&gt;this great jfiddle document&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;Bugs include the fact that the results text sometimes gets stuck part way down the page, and that the reload button reloads the whole page - not just a part of the script. Which is all it needs. Something for next time...  &lt;/p&gt;
+&lt;p&gt;—layout: posttitle: ‘Javascript Game No.3: catch the ball’date: 2014-09-14 19:55:56.000000000 +01:00type: postpublished: truestatus: publishcategories: []tags: []meta:  _edit_last: ‘1’  _css_code: “\t\t\t.container1 {\r\n\t\t\t\tbackground-color: #FFFFFF;\r\n\t\t\t\theight:    400px;\r\n\t\t\t\twidth: 600px;\r\n\t\t\t\tposition:relative;\r\n\t\t\t}\r\n\t\t\t\r\n\t\t\t#ball    {\r\n\t\t\t\tposition:relative;\r\n\t\t\t}\r\n\t\t\t\r\n\r\n\r\n”  other_media: ‘’  other_media_effect: ‘’  video_link: ‘’  main_video: ‘’  meta_title: ‘’  meta_keywords: ‘’  meta_description: ‘’  image: ‘’  quote-author: Unknown  quote-url: http://  quote-copy: Unknown  audio: http://  link-url: http://  _googl_shortlink: http://goo.gl/47Lbu9author:   annaleach—
+Sure - I haven’t thought of a way this could be used to clarify or illustrate a news story yet - but, in the meantime…&lt;/p&gt;
+&lt;div class=&quot;container1&quot;&gt;# Can you catch the disco ball?&lt;br /&gt;
+&lt;div id=&quot;ball&quot;&gt;![](/assets/disco_ball_3.gif)&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;            &amp;lt;br /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This is a bit tidier than some of my other efforts.&lt;/p&gt;
+
+&lt;p&gt;I copied a lot of the bounce-off-the-edges code from &lt;a href=&quot;http://jsfiddle.net/2TUFF/&quot;&gt;this great jfiddle document&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Bugs include the fact that the results text sometimes gets stuck part way down the page, and that the reload button reloads the whole page - not just a part of the script. Which is all it needs. Something for next time…&lt;/p&gt;
+</description>
+        <pubDate>Sun, 14 Sep 2014 19:55:56 +0100</pubDate>
+        <link>/blog/2014/09/14/javascript-game-no-3-catch-the-ball.html</link>
+        <guid isPermaLink="true">/blog/2014/09/14/javascript-game-no-3-catch-the-ball.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Javascript Game No.2: align the blocks to make Conrad happy</title>
+        <description>&lt;p&gt;It's been great to work with &lt;a href=&quot;https://twitter.com/Coneee&quot;&gt;Conrad&lt;/a&gt; at Ampp3d. And one of the many things I've learned from him is to make sure I align everything that can be aligned on Illustrator. He does not like it when things are not aligned. That is what this game is about. Miss you Conrad.&lt;/p&gt;
+&lt;h1 id=&quot;heading&quot;&gt; Make Conrad happy by aligning the boxes correctly&lt;/h1&gt;
+&lt;div id=&quot;box-wrapper&quot;&gt;
+&lt;div class=&quot;boxes&quot; id=&quot;bigBox2&quot;&gt;
+&lt;/div&gt;
+&lt;div class=&quot;boxes&quot; id=&quot;smallBox&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;boxes&quot; id=&quot;bigBox2&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;boxes&quot; id=&quot;bigBox&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;boxes&quot; id=&quot;smallBox&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;boxes&quot; id=&quot;bigBox&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;boxes&quot; id=&quot;bigBox2&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;boxes&quot; id=&quot;bigBox2&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;boxes&quot; id=&quot;bigBox&quot;&gt;&lt;/div&gt;
+&amp;lt;/p&amp;gt;&lt;/div&gt;
+&lt;div id=&quot;picture-wrapper&quot;&gt;
+&lt;div id=&quot;happy&quot; class=&quot;hidden&quot;&gt;&lt;img src=&quot;/assets/happy-conrad1-e1408519812465.png&quot; /&gt;&lt;/div&gt;
+&lt;div id=&quot;sad&quot; class=&quot;active&quot;&gt;&lt;img src=&quot;/assets/sad-conrad1-e1408519837870.png&quot; /&gt;&lt;/div&gt;
+&amp;lt;/p&amp;gt;&lt;/div&gt;
+&lt;p&gt;		&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/&amp;lt;br /&amp;gt;
+jquery/2.0.2/jquery.min.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;&lt;script src=&quot;http://annaleach.net/wp-content/uploads/2014/08/animate.js&quot;&gt;&lt;br /&gt;
+		&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;—layout: posttitle: ‘Javascript Game No.2: align the blocks to make Conrad happy’date: 2014-08-27 07:26:57.000000000 +01:00type: postpublished: truestatus: publishcategories: []tags: []meta:  _edit_last: ‘1’  other_media: ‘’  other_media_effect: ‘’  video_link: ‘’  main_video: ‘’  meta_title: ‘’  meta_keywords: ‘’  meta_description: ‘’  image: ‘’  quote-author: Unknown  quote-url: http://  quote-copy: Unknown  audio: http://  link-url: http://  _css_code: “\t\t.hidden {\r\n\t\t\tdisplay: none;\r\n\t\t}\r\n\t\t\r\n\t\t.active    {\r\n\t\t\t\r\n\t\t}\r\n\r\n             #bigBox2 {\r\n\t\tbackground-color: blue;\r\n\t\theight:    60px;\r\n\t\twidth:200px;\r\n  \t\tmargin-left: 65px;\r\n\t\t\t\t\r\n\t\t}\r\n\t\t\r\n\t\t#smallBox    {\r\n\t\tbackground-color: #FFFF00;\r\n\t\tmargin-left: 49px;\r\n\t\theight: 40px;\r\n\t\twidth:    40px;\r\n\t\t\r\n\t\t}\r\n\r\n\t\t#bigBox {\r\n\t\tbackground-color: sienna;\r\n\t\tmargin-left:    20px;\r\n\t\theight: 30px;\r\n\t\twidth: 160px;\r\n\t\t\r\n\t\t}\r\n\t\t\r\n\t\t#box-wrapper    {\r\n\t\tfloat: left;\r\n\t\t}\r\n\t\t\r\n\t\t#picture-wrapper {\r\n\t\tpadding:    10px;\r\n\t\tfloat: right;\r\n\t\t}\r\n”  _googl_shortlink: http://goo.gl/fSCZAUauthor:   annaleach—
+It’s been great to work with &lt;a href=&quot;https://twitter.com/Coneee&quot;&gt;Conrad&lt;/a&gt; at Ampp3d. And one of the many things I’ve learned from him is to make sure I align everything that can be aligned on Illustrator. He does not like it when things are not aligned. That is what this game is about. Miss you Conrad.&lt;/p&gt;
+&lt;h1 id=&quot;make-conrad-happy-by-aligning-the-boxes-correctly&quot;&gt;Make Conrad happy by aligning the boxes correctly&lt;/h1&gt;
+&lt;div id=&quot;box-wrapper&quot;&gt;&lt;div class=&quot;boxes&quot; id=&quot;bigBox2&quot;&gt;&lt;/div&gt;&lt;div class=&quot;boxes&quot; id=&quot;smallBox&quot;&gt;&lt;/div&gt;&lt;div class=&quot;boxes&quot; id=&quot;bigBox2&quot;&gt;&lt;/div&gt;&lt;div class=&quot;boxes&quot; id=&quot;bigBox&quot;&gt;&lt;/div&gt;&lt;div class=&quot;boxes&quot; id=&quot;smallBox&quot;&gt;&lt;/div&gt;&lt;div class=&quot;boxes&quot; id=&quot;bigBox&quot;&gt;&lt;/div&gt;&lt;div class=&quot;boxes&quot; id=&quot;bigBox2&quot;&gt;&lt;/div&gt;&lt;div class=&quot;boxes&quot; id=&quot;bigBox2&quot;&gt;&lt;/div&gt;&lt;div class=&quot;boxes&quot; id=&quot;bigBox&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div id=&quot;picture-wrapper&quot;&gt;&lt;div id=&quot;happy&quot; class=&quot;hidden&quot;&gt;![](/assets/happy-conrad1-e1408519812465.png)&lt;/div&gt;&lt;div id=&quot;sad&quot; class=&quot;active&quot;&gt;![](/assets/sad-conrad1-e1408519837870.png)&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 27 Aug 2014 07:26:57 +0100</pubDate>
+        <link>/blog/2014/08/27/javascript-game-no-2-align-the-blocks-to-make-conrad-happy.html</link>
+        <guid isPermaLink="true">/blog/2014/08/27/javascript-game-no-2-align-the-blocks-to-make-conrad-happy.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Javascript Game No.1 - the coffee calculator</title>
+        <description>&lt;p&gt;I've been learning Javascript and Jquery over the last six months - from Codeacademy, from two books and from a course at City university. All recommended. Though, the books are hardest. &lt;/p&gt;
+&lt;p&gt;I made this calculator using vanilla javascript which went onto be the guts of an interactive we did on Ampp3d. In fact the first interactive we've done. (I guess though you could count our live counters eg. &lt;a href=&quot;http://ampp3d.mirror.co.uk/2014/02/21/wayne-rooney-earnings/&quot;&gt;the Wayne Rooney salary counter&lt;/a&gt; as taking the &quot;input&quot; of user time spent on page.) &lt;/p&gt;
+&lt;p&gt;The end result was the ampp3d coffee machine story. &lt;/p&gt;
+&lt;style&gt;
+			.active{ }&lt;br /&gt;
+			.hidden {display: none;}&lt;br /&gt;
+			.red {background-color:red;}&lt;/p&gt;
+&lt;/style&gt;
+
+&lt;h1&gt; How much does your coffee cost you?&lt;/h1&gt;
+&lt;h2&gt; What coffee do you buy each day? &lt;/h2&gt;
+&lt;p&gt;&amp;lt;div id = “wrapper”; style=”float: left; width: 400px; height: 150px”&amp;gt;&lt;/p&gt;
+&lt;div class=&quot;button&quot; id=&quot;cappuccino&quot;&gt;&lt;button&gt;Cappuccino&lt;/button&gt;&lt;/div&gt;
+&lt;div class=&quot;button&quot; id=&quot;latte&quot;&gt;&lt;button&gt;Latte&lt;/button&gt;&lt;/div&gt;
+&lt;div class=&quot;button&quot; id=&quot;americano&quot;&gt;&lt;button&gt;Americano&lt;/button&gt;&lt;/div&gt;
+&lt;div class=&quot;button&quot; id=&quot;expresso&quot;&gt;&lt;button&gt;Expresso&lt;/button&gt;&lt;/div&gt;
+&lt;div class=&quot;button&quot; id=&quot;flatwhite&quot;&gt;&lt;button&gt;Flatwhite&lt;/button&gt;&lt;/div&gt;
+&lt;p&gt;&amp;lt;div id = “day-wrapper”; style=”float: right; width: 400px; height: 150px”&amp;gt;&lt;/p&gt;
+&lt;h2 id=&quot;cupsTotal&quot;&gt; You drink &lt;span id=&quot;youDrink&quot;&gt; &lt;/span&gt; cups a day&lt;/h2&gt;
+&lt;h2 id=&quot;dayCostResult&quot;&gt;You spend £&lt;span id=&quot;youSpend&quot;&gt; &lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;button&quot; id=&quot;calculate&quot;&gt;&lt;button&gt;Calculate how much you spend on coffee in your LIFE&lt;/button&gt;&lt;/div&gt;
+&lt;div id=&quot;results-wrapper&quot;&gt;
+&lt;h3 id=&quot;yearCostResult&quot; class=&quot;red&quot;&gt;You will spend £&lt;span id=&quot;youSpendYear&quot;&gt; &lt;/span&gt; on coffee a year&lt;/h3&gt;
+&lt;h3 id=&quot;lifeCostResult&quot; class=&quot;red&quot;&gt;You will spend £ &lt;span id=&quot;youSpendLife&quot;&gt; &lt;/span&gt; on coffee in your 47-year caffeine-addled working life &lt;/h3&gt;
+&amp;lt;/p&amp;gt;&lt;/div&gt;
+&lt;p&gt;		&lt;script src=&quot;http://annaleach.net/wp-content/uploads/2014/08/coffee-machine-final.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Our designer Dave drew it to make it look good, added some internet game tricks he'd learnt from UsVsTh3m and our developer added the CSS so it all fitted behind the design. So it ended up looking like this. &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://annaleach.net/wp-content/uploads/2014/08/Screen-Shot-2014-08-12-at-12.52.25.png&quot;&gt;&lt;img src=&quot;/assets/Screen-Shot-2014-08-12-at-12.52.25.png&quot; alt=&quot;Ampp3d coffee machine &quot; title=&quot;Screen Shot 2014-08-12 at 12.52.25&quot; width=&quot;470&quot; height=&quot;521&quot; class=&quot;aligncenter size-full wp-image-270&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;To see it work properly - check &lt;a href=&quot;http://ampp3d.mirror.co.uk/2014/07/22/how-much-will-you-spend-on-coffee-in-your-lifetime-waaay-too-much/&quot;&gt;it out on the Ampp3d site here&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;As far as the javascript goes - one of the more difficult bits was getting the javascript to display numbers with the correct number of decimal places. In the end I just copied some code &lt;/p&gt;
+&lt;p&gt;Otherwise I've just bound addition functions to the coffee buttons, and multiplication functions to the lifetime bill, and collected them all in the variable runningcost. &lt;/p&gt;
+&lt;p&gt;—layout: posttitle: Javascript Game No.1 - the coffee calculatordate: 2014-08-12 14:48:16.000000000 +01:00type: postpublished: truestatus: publishcategories: []tags: []meta:  quote-url: http://  quote-author: Unknown  image: ‘’  meta_description: ‘’  meta_keywords: ‘’  meta_title: ‘’  main_video: ‘’  video_link: ‘’  other_media_effect: ‘’  other_media: ‘’  _edit_last: ‘1’  link-url: http://  quote-copy: Unknown  audio: http://  _googl_shortlink: http://goo.gl/MZdULcauthor:   annaleach—
+I’ve been learning Javascript and Jquery over the last six months - from Codeacademy, from two books and from a course at City university. All recommended. Though, the books are hardest.&lt;/p&gt;
+
+&lt;p&gt;I made this calculator using vanilla javascript which went onto be the guts of an interactive we did on Ampp3d. In fact the first interactive we’ve done. (I guess though you could count our live counters eg. &lt;a href=&quot;http://ampp3d.mirror.co.uk/2014/02/21/wayne-rooney-earnings/&quot;&gt;the Wayne Rooney salary counter&lt;/a&gt; as taking the “input” of user time spent on page.)&lt;/p&gt;
+
+&lt;p&gt;The end result was the ampp3d coffee machine story.&lt;/p&gt;
+&lt;style&gt;.active{ }&lt;br /&gt;.hidden {display: none;}&lt;br /&gt;.red {background-color:red;}&lt;/p&gt;&lt;/style&gt;
+&lt;h1 id=&quot;how-much-does-your-coffee-cost-you&quot;&gt;How much does your coffee cost you?&lt;/h1&gt;
+&lt;h2 id=&quot;what-coffee-do-you-buy-each-day&quot;&gt;What coffee do you buy each day?&lt;/h2&gt;
+&lt;p&gt;&amp;lt;div id = “wrapper”; style=”float: left; width: 400px; height: 150px”&amp;gt;&amp;lt;div class=&quot;button&quot; id=&quot;cappuccino&quot;&amp;gt;&lt;button&gt;Cappuccino&lt;/button&gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&quot;button&quot; id=&quot;latte&quot;&amp;gt;&lt;button&gt;Latte&lt;/button&gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&quot;button&quot; id=&quot;americano&quot;&amp;gt;&lt;button&gt;Americano&lt;/button&gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&quot;button&quot; id=&quot;expresso&quot;&amp;gt;&lt;button&gt;Expresso&lt;/button&gt;&amp;lt;/div&amp;gt;&amp;lt;div class=&quot;button&quot; id=&quot;flatwhite&quot;&amp;gt;&lt;button&gt;Flatwhite&lt;/button&gt;&amp;lt;/div&amp;gt;&amp;lt;div id = “day-wrapper”; style=”float: right; width: 400px; height: 150px”&amp;gt;##  You drink &lt;span id=&quot;youDrink&quot;&gt; &lt;/span&gt; cups a day&lt;/p&gt;
+&lt;h2 id=&quot;you-spend-span-idyouspend-span&quot;&gt;You spend £&lt;span id=&quot;youSpend&quot;&gt; &lt;/span&gt;&lt;/h2&gt;
+&lt;div class=&quot;button&quot; id=&quot;calculate&quot;&gt;&lt;button&gt;Calculate how much you spend on coffee in your LIFE&lt;/button&gt;&lt;/div&gt;
+&lt;div id=&quot;results-wrapper&quot;&gt;### You will spend £&lt;span id=&quot;youSpendYear&quot;&gt; &lt;/span&gt; on coffee a year
+### You will spend £ &lt;span id=&quot;youSpendLife&quot;&gt; &lt;/span&gt; on coffee in your 47-year caffeine-addled working life 
+&lt;/div&gt;
+
+&lt;p&gt;Our designer Dave drew it to make it look good, added some internet game tricks he’d learnt from UsVsTh3m and our developer added the CSS so it all fitted behind the design. So it ended up looking like this.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://annaleach.net/wp-content/uploads/2014/08/Screen-Shot-2014-08-12-at-12.52.25.png&quot;&gt;&lt;img src=&quot;/assets/Screen-Shot-2014-08-12-at-12.52.25.png&quot; alt=&quot;Ampp3d coffee machine &quot; title=&quot;Screen Shot 2014-08-12 at 12.52.25&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;To see it work properly - check &lt;a href=&quot;http://ampp3d.mirror.co.uk/2014/07/22/how-much-will-you-spend-on-coffee-in-your-lifetime-waaay-too-much/&quot;&gt;it out on the Ampp3d site here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As far as the javascript goes - one of the more difficult bits was getting the javascript to display numbers with the correct number of decimal places. In the end I just copied some code&lt;/p&gt;
+
+&lt;p&gt;Otherwise I’ve just bound addition functions to the coffee buttons, and multiplication functions to the lifetime bill, and collected them all in the variable runningcost.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 12 Aug 2014 14:48:16 +0100</pubDate>
+        <link>/blog/2014/08/12/javascript-game-no-1-the-coffee-calculator.html</link>
+        <guid isPermaLink="true">/blog/2014/08/12/javascript-game-no-1-the-coffee-calculator.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+  </channel>
+</rss>
