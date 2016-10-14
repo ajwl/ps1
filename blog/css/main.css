@@ -1,0 +1,57 @@
+
+/* STIE AHD BLOG */
+@font-face {
+  font-family: 'Roboto_Condensed';
+  src: url('../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Oswald';
+  src: url('../fonts/Oswald/Oswald-Regular.ttf') format('truetype');
+}
+html {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  position: static;
+  margin: 0;
+  border-left: 10px solid #32CD32;
+}
+
+.content {
+  margin: 0 20%;
+}
+
+a {
+  color: #cd32cd;
+}
+header a{
+  text-decoration: none;
+}
+
+a:visited {
+  color: #3232cd;
+}
+
+/* BLOG STYLES */
+
+h1, h2, h3 {
+  font-family: 'Roboto_Condensed', sans-serif;
+}
+
+p, li {
+  font-family: 'Oswald', sans-serif;
+}
+
+
+h1 {
+  font-size: 3em;
+  margin: 0 0 .2em 0;
+}
+
+.meta {
+  margin: 0 20%;
+}
+
+
