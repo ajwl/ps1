@@ -1,4 +1,5 @@
 
+/* STIE AHD BLOG */
 @font-face {
   font-family: 'Roboto_Condensed';
   src: url('../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf') format('truetype');
@@ -10,25 +11,6 @@
 html {
   margin: 0;
   height: 100%;
-}
-
-h1, h2, h3 {
-  font-family: 'Roboto_Condensed', sans-serif;
-}
-
-p, li {
-  font-family: 'Oswald', sans-serif;
-}
-
-h1 {
-  font-size: 3.5em;
-  margin: 0 0 .2em 0;
-}
-
-a svg:hover #twitter,
-a svg:hover #github,
-a svg:hover #linkedin {
- fill: #32CD32;
 }
 
 body {
@@ -52,7 +34,24 @@ a:visited {
   color: #3232cd;
 }
 
-header svg {
-  width: 1.5em;
-  padding-right: 1em;
+/* BLOG STYLES */
+
+h1, h2, h3 {
+  font-family: 'Roboto_Condensed', sans-serif;
 }
+
+p, li {
+  font-family: 'Oswald', sans-serif;
+}
+
+
+h1 {
+  font-size: 3em;
+  margin: 0 0 .2em 0;
+}
+
+.meta {
+  margin: 0 20%;
+}
+
+
