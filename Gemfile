@@ -4,3 +4,5 @@ gem 'sinatra'
 gem 'serve'
 
 gem 'jekyll'
+
+gem 'kramdown'

@@ -7,29 +7,7 @@ published: true
 status: publish
 categories: []
 tags: []
-meta:
-  _edit_last: '1'
-  _css_code: "\t\t\t.container1 {\r\n\t\t\t\tbackground-color: #FFFFFF;\r\n\t\t\t\theight:
-    400px;\r\n\t\t\t\twidth: 600px;\r\n\t\t\t\tposition:relative;\r\n\t\t\t}\r\n\t\t\t\r\n\t\t\t#ball
-    {\r\n\t\t\t\tposition:relative;\r\n\t\t\t}\r\n\t\t\t\r\n\r\n\r\n"
-  other_media: ''
-  other_media_effect: ''
-  video_link: ''
-  main_video: ''
-  meta_title: ''
-  meta_keywords: ''
-  meta_description: ''
-  image: ''
-  quote-author: Unknown
-  quote-url: http://
-  quote-copy: Unknown
-  audio: http://
-  link-url: http://
-  _googl_shortlink: http://goo.gl/47Lbu9
-author:
-
-
-   annaleach
+author: annaleach
 
 
 ---
