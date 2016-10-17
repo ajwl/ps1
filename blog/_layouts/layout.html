@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-	{% include head.html %}
-	<body>
-		{{ content }}
-	</body>
+    <head>
+        <meta charset="utf-8"
+              name="viewport"
+              content="width=device-width, initial-scale=1">
+        <title>{{ page.title }}</title>
+
+        <link rel="stylesheet" href="../../../css/base.css" type="text/css" media="screen, projection" />
+        <link rel="stylesheet" href="../../../css/main.css" type="text/css" media="screen, projection" />
+    </head>
+    <body>
+
+        {{ content }}
+
+    </body>
 </html>

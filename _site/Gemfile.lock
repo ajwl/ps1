@@ -63,5 +63,9 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  kramdown
   serve
   sinatra
+
+BUNDLED WITH
+   1.13.1

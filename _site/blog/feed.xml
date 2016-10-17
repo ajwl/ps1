@@ -5,39 +5,9 @@
     <description></description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Oct 2016 19:20:29 +0100</pubDate>
-    <lastBuildDate>Wed, 12 Oct 2016 19:20:29 +0100</lastBuildDate>
+    <pubDate>Mon, 17 Oct 2016 08:44:25 +0100</pubDate>
+    <lastBuildDate>Mon, 17 Oct 2016 08:44:25 +0100</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Tue, 27 Sep 2016 08:24:38 +0100</pubDate>
-        <link>/blog/jekyll/update/2016/09/27/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">/blog/jekyll/update/2016/09/27/welcome-to-jekyll.html</guid>
-        
-        
-        <category>blog</category>
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
     
       <item>
         <title>CSS Layout: doing it three ways</title>
@@ -97,7 +67,7 @@
 
 &lt;p&gt;&lt;em&gt;17:45, &lt;a href=&quot;http://thewebahead.net/110&quot;&gt;Understanding the Web with Jeremy Keith&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://annaleach.net/wp-content/uploads/2016/08/wow-cat-1.jpg&quot;&gt;&lt;img src=&quot;/assets/wow-cat-1-300x243.jpg&quot; alt=&quot;wow cat&quot; /&gt;&lt;/a&gt; omgerz itz so true&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://annaleach.net/wp-content/uploads/2016/08/wow-cat-1.jpg&quot;&gt;&lt;img src=&quot;images/blog-images/wow-cat-1-300x243.jpg&quot; alt=&quot;wow cat&quot; /&gt;&lt;/a&gt; omgerz itz so true&lt;/p&gt;
 
 &lt;p&gt;Sometimes its good to remember how crazily amazing the internet is. It’s easy to forget that when you’re moaning about Safari being slow. If you think about it, we’re holding these pieces of glass that are sucking information from the air around us.&lt;/p&gt;
 
@@ -205,9 +175,9 @@
         <title>9 things I learned from doing mainstream data journalism</title>
         <description>&lt;p&gt;I was the editor of the Mirror’s data blog &lt;a href=&quot;http://www.mirror.co.uk/news/ampp3d/?pageNumber=3&quot;&gt;Ampp3d&lt;/a&gt; for a year. These are some things I learned trying to make data journalism mainstream.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;1. Interactives make an enormous amount of sense as a doorway to a big spreadsheet.&lt;/strong&gt; They allow for that great kicker for a story – personalisation. A general story about crime figures not catching your attention? How about knife attacks on your route home from work - you’re more interested. Interactives are a natural tool for data journalists.&lt;/p&gt;
+&lt;p&gt;** 1. Interactives make an enormous amount of sense as a doorway to a big spreadsheet. ** They allow for that great kicker for a story – personalisation. A general story about crime figures not catching your attention? How about knife attacks on your route home from work - you’re more interested. Interactives are a natural tool for data journalists.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;2. People love real-time.&lt;/strong&gt; Even fake real time. Though it’s only the big numbers it really works for. You know that urban legend – if Bill Gates dropped a $50 dollar bill it wouldn’t be worth his time to bend down and pick it up, because he’d already have made twice that in interest in the 10 seconds it would take him.&lt;/p&gt;
+&lt;p&gt;** 2. People love real-time. ** Even fake real time. Though it’s only the big numbers it really works for. You know that urban legend – if Bill Gates dropped a $50 dollar bill it wouldn’t be worth his time to bend down and pick it up, because he’d already have made twice that in interest in the 10 seconds it would take him.&lt;/p&gt;
 
 &lt;p&gt;One of our biggest hits was &lt;a href=&quot;http://ampp3d.mirror.co.uk/2014/02/21/wayne-rooney-earnings/&quot;&gt;basically a visualisation of that&lt;/a&gt;, with a different millionaire.&lt;/p&gt;
 
@@ -217,13 +187,13 @@
 
 &lt;p&gt;This story – &lt;a href=&quot;http://www.mirror.co.uk/news/ampp3d/home-office-think-youre-gay-5280895&quot;&gt;Does the Home Office Think You’re Gay?&lt;/a&gt; – was more new formats than data journalism. But quizzes are another good way to find yourself in the dataset, in the news story. Even to build empathy by putting you into the mindset of the participant – in this case a gay refugee. For a nominally small story about a gay asylum seeker this “Does the Home Office think you’re gay?” Quiz actually beat out Kim Kardashian to make the most top 5 most read on the Mirror’s site.&lt;a href=&quot;http://annaleach.net/wp-content/uploads/2015/09/gay-enough.jpg&quot;&gt;&lt;img src=&quot;/assets/gay-enough.jpg&quot; alt=&quot;gay-enough&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;4. I think you should sit next to your developer.&lt;/strong&gt; Not least so you can draw things on bits of A4 and generally keep on top of what they are doing. Just saying “oh make a tool to go with the ONS dataset” has from experience, turned out not to work. So &lt;a href=&quot;https://storify.com/charlesarthur/great-truths-of-our-time&quot;&gt;to contribute to this debate&lt;/a&gt; - yes - sit next to them.&lt;/p&gt;
+&lt;p&gt;**4. I think you should sit next to your developer. ** Not least so you can draw things on bits of A4 and generally keep on top of what they are doing. Just saying “oh make a tool to go with the ONS dataset” has from experience, turned out not to work. So &lt;a href=&quot;https://storify.com/charlesarthur/great-truths-of-our-time&quot;&gt;to contribute to this debate&lt;/a&gt; - yes - sit next to them.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;5. Think about UX and keep the message simple.&lt;/strong&gt; One of the reasons it was interesting to work with my old boss &lt;a href=&quot;http://martinbelam.com/&quot;&gt;Martin Belam&lt;/a&gt; was that he brought in a UX background that is rare in journalism. One general tip. Keep things devastatingly simple. This was our most shared graph ever. And let me tell you we did a lot of graphs.&lt;/p&gt;
+&lt;p&gt;**5. Think about UX and keep the message simple. ** One of the reasons it was interesting to work with my old boss &lt;a href=&quot;http://martinbelam.com/&quot;&gt;Martin Belam&lt;/a&gt; was that he brought in a UX background that is rare in journalism. One general tip. Keep things devastatingly simple. This was our most shared graph ever. And let me tell you we did a lot of graphs.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://annaleach.net/wp-content/uploads/2015/09/housing_benefit_money.jpg&quot;&gt;&lt;img src=&quot;/assets/housing_benefit_money-300x150.jpg&quot; alt=&quot;Ampp3d graph on housing benefit&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;6. Deal with the mobile screen.&lt;/strong&gt; It’s long. Writing for mobile not desktop is increasingly becoming the norm. But it’s more than just putting things in one column, you can really make the format work for you.&lt;/p&gt;
+&lt;p&gt;**6. Deal with the mobile screen. ** It’s long. Writing for mobile not desktop is increasingly becoming the norm. But it’s more than just putting things in one column, you can really make the format work for you.&lt;/p&gt;
 
 &lt;p&gt;Another UX / screen design thing Martin did once or twice which I really loved is making a kind of comic strip that runs vertically down the page and so reveals as you scroll down it. EG. This &lt;a href=&quot;http://ampp3d.mirror.co.uk/2014/01/07/that-gove-effect-on-teacher-morale-in-full/&quot;&gt;story about the effect Tory education minister Michael Gove had on teacher morale&lt;/a&gt;.&lt;/p&gt;
 
@@ -231,11 +201,11 @@
 
 &lt;p&gt;We did it sometimes with images where you redo a photo or graph several times with more notes on it each time. Again the idea is it reveals the narrative as you scroll. Yes, Buzzfeed’s lists basically work like this, but this takes it further.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;7. Of course you should annotate graphs.&lt;/strong&gt; You’re a journalist – you’re telling a story. Use the graph to tell a story. Thanks&lt;/p&gt;
+&lt;p&gt;**7. Of course you should annotate graphs. ** You’re a journalist – you’re telling a story. Use the graph to tell a story. Thanks&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://annaleach.net/wp-content/uploads/2015/09/Welfare-spending-template.jpg&quot;&gt;&lt;img src=&quot;/assets/Welfare-spending-template.jpg&quot; alt=&quot;Ampp3d graph benefits cuts in full&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;8. You still need to write well.&lt;/strong&gt; In this day and age people expect you to scrape, know deep level excel, use Photoshop, perhaps javascript. But you still need to write well. Journalism is still mainly writing and that – combined with recognising a good story - are still the two core skills that inform whatever format your story plays out in.&lt;/p&gt;
+&lt;p&gt;**8. You still need to write well. ** In this day and age people expect you to scrape, know deep level excel, use Photoshop, perhaps javascript. But you still need to write well. Journalism is still mainly writing and that – combined with recognising a good story - are still the two core skills that inform whatever format your story plays out in.&lt;/p&gt;
 
 &lt;p&gt;**9. Developing can be extremely creative. **The games on our sister site &lt;a href=&quot;http://usvsth3m.com/&quot;&gt;UsVsTh3m&lt;/a&gt; plus some of the widgets we managed to produce on Ampp3d really opened my eyes to how creative coding and developing can be. After all it’s fun to control the whole page, rather than just the 600 words in the middle of it.&lt;/p&gt;
 
@@ -485,6 +455,65 @@ I’ve been learning Javascript and Jquery over the last six months - from Codea
         <pubDate>Tue, 12 Aug 2014 14:48:16 +0100</pubDate>
         <link>/blog/2014/08/12/javascript-game-no-1-the-coffee-calculator.html</link>
         <guid isPermaLink="true">/blog/2014/08/12/javascript-game-no-1-the-coffee-calculator.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Jezebel's Jessica Coen on what the deal is with blogs</title>
+        <description>&lt;p&gt;About a million years ago - three years ago - I went to New York and I begged Jessica Coen the editor of &lt;a href=&quot;http://jezebel.com/&quot;&gt;Jezebel&lt;/a&gt; to have a coffee with me. She obliged. Which was brilliant because Jezebel and Gawker Media are the best in the blogging game, and of all the blogs, I especially love Jezebel.&lt;/p&gt;
+
+&lt;p&gt;I asked her some questions like “what IS a good blog”, filed the answers away, and left it all on my hard drive for four long years. I found it again.&lt;/p&gt;
+
+&lt;p&gt;The bit I remember from the conversation - and have often referred back to is her point about Seinfeld. It’s choosing to blog about something that people notice, but isn’t enough of a “news story” to break into the news cycle. 80% of Buzzfeed articles consist of this.&lt;/p&gt;
+
+&lt;p&gt;I also asked her whether there was a distinction between journalists and bloggers. Jeez. It was 2011, forgive me.&lt;/p&gt;
+
+&lt;p&gt;Here’s a few [2011] pointers from the best.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;ME: What are your non-blog inspirations? I remember a guy from Gawker saying something about writing what people were saying at parties..&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;JESSICA:&lt;/strong&gt; I remember Nick Denton saying just after I joined - like in 2004 or something - “On the site” [which was just Gawker at the time but I think it really does inform all blogs period] “what we write about is what people are talking about when they’re not working.” It’s bigger now, but  when it was just a small media site - it was ‘what are journalists talking about at the bar?’ That kind of thing.&lt;/p&gt;
+
+&lt;p&gt;I think that sensibility kind of informs everything we do: which is what are people talking about that nobody is necessarily writing about or saying? And I still think that’s at the core of what we do.&lt;/p&gt;
+
+&lt;p&gt;Obviously a huge part of what we do now is aggregate and discuss and further stories that are already out there. But I think that the best pieces on any blog are almost Seinfeld, you know Seinfeld? The best parts of his humour are always - &lt;a href=&quot;http://www.youtube.com/watch?v=n0E7EaRLmSI&quot;&gt;what’s the deal with xx&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;And that kind of thinking - like when you’re talking with someone and you ask “what’s the deal with that thing on the roof over there? [ points at a roof] Seriously I don’t get what the deal is with that thing on the roof?” And then if somebody writes about it I’m like “oh my god - yes”.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;So it’s pulling something out of that everyday environment and saying - “actually look at this properly”&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Yes, or if you go to dinner multiple times with different groups of people and the same conversation keeps coming up - what are people arguing about? What are people caring about that isn’t just straight news? Or if it is a straight news story - what’s really screaming at people? So I think it’s not just what’s news-worthy, but what is it people want to discuss.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What are the qualities of a great blog post?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The writing. You have to pull the reader in. With writing online particularly. Any platform online is so frantic, frenetic and crazy and loud with pop-up windows and blinking banner ads and god knows how many other windows, tabs and programmes the reader has open. So in order to hold their attention as a writer, you have to write bigger. More voice, more personality, more attitude, more of everything. You have to fight for their attention a bit more.&lt;/p&gt;
+
+&lt;p&gt;Especially on blogs, I think at this point that people who regularly read blogs know what to expect in terms of how a post is laid out: here’s the intro, here’s the block quote, here’s the kicker - whatever.&lt;/p&gt;
+
+&lt;p&gt;So you have to make sure that whatever you’re doing with that grabs their attention enough so they don’t just zone out and not really read, and that means that the writing has to be really big.&lt;/p&gt;
+
+&lt;p&gt;Then the peg has to be really clear. I’d say your first three sentences have to be really killer. Not unlike a newspaper article, but it’s not quite the same as the inverted triangle theory of writing for newspapers because you have to have a compelling hook to bring people in. If you think of great blog posts they’re usually really well written and really funny, maybe not like slapstick funny but entertaining. I’d say that’s a big part of it.&lt;/p&gt;
+
+&lt;p&gt;Be mindful of length. Sometimes less is more. I don’t mean like 3 words long but 750 words might be better than 1500 words. And  I think people’s eyes really glaze over and go totally dead when you are writing too long on the web and they’re not even reading after the seven hundred words.&lt;/p&gt;
+
+&lt;p&gt;So a great blog post. What’s your point? It should be really clear, the reader should know what they’re reading right away. So it’s a balance between the headline and the first paragraph, but I think that the way the web is working now, your headline has to be really clear.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately there’s not enough room for witty headlines like there used to be. The writer/creative in me hates that - it drives me nuts not being able to be as witty in headlines -but still there’s a way to play with it a bit.The headline has to be clear because people are going to know what they want to read by the time they’ve finished that headline and if you’ve got any chance to get them after that, it’s those first three sentences.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I asked Jessica about her favourite blog that she’d written to date. She mentioned one, I think it was &lt;a href=&quot;http://www.gawker.com/news/joe-dolce/burning-bridges-that-never-really-mattered-joe-dolce-edition-207472.php&quot;&gt;this one&lt;/a&gt;, and then talked about it as a blog.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;It was not a important piece, it was not like journalism. It was to me actually kind of what blogs are… they exist for us to say what we want to say. Yes we can put journalism on there but they’re also like “hey this happened, here’s a story for you”.&lt;/p&gt;
+
+&lt;p&gt;I’ve put plenty of stuff up which is like “okay - here’s a silly story for you” and it does really really well.&lt;/p&gt;
+
+&lt;p&gt;Because that’s what makes blogs blogs, that’s what sets us apart. We can sit and summarise all the news like everyone on the Huffington Post site and we can sit and write analytical pieces like Salon and Slate - we do that too - but we also just write stuff. I guess this goes back to what we’re saying earlier that there should be a certain element of conversation to your writing. Inherently conversation is just what you’re talking about with your girl friends and guy friends. I find that often really does strike a chord.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 28 Apr 2014 23:00:22 +0100</pubDate>
+        <link>/blog/2014/04/28/jezebels-jessica-coen-on-what-the-deal-is-with-blogs.html</link>
+        <guid isPermaLink="true">/blog/2014/04/28/jezebels-jessica-coen-on-what-the-deal-is-with-blogs.html</guid>
         
         
         <category>blog</category>
