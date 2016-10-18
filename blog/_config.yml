@@ -2,6 +2,10 @@ source: '/_posts'
 destination: '/blog'
 JEKYLL_ENV: development
 
+auto: true
+server: false
+permalink: /:title
+
 title: The blog of Anna
 email: your-email@domain.com
 description: >
