@@ -17,11 +17,19 @@ class MySite < Sinatra::Base
   end
 
   def jekyll_blog(path)
-    p File.dirname(__FILE__)
-
     file_path = File.join(File.dirname(__FILE__), '/blog/_site', path.gsub('/blog', ''))
     p "----------------------------------------"
     p file_path
+    file_path = File.join(file_path, 'index.html') unless file_path =~ /\.[a-z]+$/i
+
+    if File.exist?(file_path)
+      file = File.open(file_path, r)
+      contents = file.read
+      file.close
+
+      p contents
+
+    end
 
   end
 
