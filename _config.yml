@@ -24,4 +24,5 @@ repository: "ajwl/blog"
 #Build settings
 show_dir_listing: false
 host: 127.0.0.1
- # the subpath of your site, e.g. /blog
+baseurl: # the subpath of your site, e.g. /blog
+include: ['blog/blog.erb']
