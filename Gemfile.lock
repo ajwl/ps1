@@ -24,6 +24,8 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-docs (3.2.1)
+      jekyll (= 3.2.1)
     jekyll-github-metadata (1.11.1)
       octokit (~> 4.0)
     jekyll-sass-converter (1.4.0)
@@ -84,6 +86,7 @@ DEPENDENCIES
   fileutils (~> 0.7)
   hpricot
   jekyll (= 3.2.1)
+  jekyll-docs
   jekyll-github-metadata (~> 1.0)
   kramdown
   minima

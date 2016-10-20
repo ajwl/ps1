@@ -1,0 +1,27 @@
+port: 3000
+source: 'blog/_posts'
+destination: 'blog/_site'
+JEKYLL_ENV: development
+
+auto: true
+server: false
+permalink: none
+
+title: The blog of Anna
+email: your-email@domain.com
+description: Development, personal and otherwise, the blog of Anna Leach.
+
+#url: "http://127.0.0.1:4000"
+
+twitter_username: annajleach
+github_username:  ajwl
+
+# Build settings
+markdown: kramdown
+theme: minima
+repository: "ajwl/blog"
+
+#Build settings
+show_dir_listing: false
+host: 127.0.0.1
+ # the subpath of your site, e.g. /blog
