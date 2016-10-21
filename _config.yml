@@ -1,7 +1,8 @@
 port: 3000
-source: 'blog/_posts'
-destination: 'blog/_site'
+#source: '_posts'
+#destination: '_site'
 JEKYLL_ENV: development
+exclude: ['views', 'Gemfile', 'app.rb', 'config.ru', 'README.md', 'Gemfile.lock']
 
 auto: true
 server: false
@@ -11,18 +12,15 @@ title: The blog of Anna
 email: your-email@domain.com
 description: Development, personal and otherwise, the blog of Anna Leach.
 
-#url: "http://127.0.0.1:4000"
+url: "http://localhost:3000"
+image_base: '/images'
 
 twitter_username: annajleach
 github_username:  ajwl
 
 # Build settings
 markdown: kramdown
-theme: minima
-repository: "ajwl/blog"
 
-#Build settings
 show_dir_listing: false
-host: 127.0.0.1
-baseurl: # the subpath of your site, e.g. /blog
-include: ['blog/blog.erb']
+#host: 127.0.0.1
+baseurl: #'/blog' the subpath of your site, e.g. /blog

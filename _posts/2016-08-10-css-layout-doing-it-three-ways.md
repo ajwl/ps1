@@ -10,8 +10,6 @@ tags:
 - css
 - web development
 author: annaleach
-
-
 ---
 When I started doing CSS, and coolly switching background-colors with a word or two, I was horrified to discover that layouts are so difficult.
 
@@ -19,7 +17,7 @@ After all, I thought, **layouts were the whole damn point of CSS** in the first 
 
 It’s why people use[ bootstrap css](http://getbootstrap.com/css/) all the time. It just puts shit in the centre of the page and lines it up nicely. And god knows it’s kind of a faff doing it any other way.
 
-[![UL in html]({{ site.baseurl }}/assets/Screen-Shot-2016-08-10-at-22.21.27.png)](http://annaleach.net/wp-content/uploads/2016/08/Screen-Shot-2016-08-10-at-22.21.27.png) _That's supposed to become a navigation bar? Turning a UL element into a navigation bar requires more heavy-lifting in CSS than you would hope_
+[![UL in html]({{ site.image_base }}/Screen-Shot-2016-08-10-at-22.21.27.png)](http://annaleach.net/wp-content/uploads/2016/08/Screen-Shot-2016-08-10-at-22.21.27.png) _That's supposed to become a navigation bar? Turning a UL element into a navigation bar requires more heavy-lifting in CSS than you would hope_
 
  
 

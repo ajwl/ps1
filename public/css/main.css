@@ -1,3 +1,4 @@
+/* ---------------  SHARED ---------------  */
 
 @font-face {
   font-family: 'Roboto_Condensed';
@@ -57,3 +58,58 @@ header svg {
   width: 1.5em;
   padding-right: 1em;
 }
+
+/* ---------------  BLOG ---------------  */
+
+/* BLOG STYLES */
+
+.blog-post h1, h2, h3 {
+  font-family: 'Roboto_Condensed', sans-serif;
+}
+
+.blog-post p, li, a {
+  font-family: 'Oswald', sans-serif;
+}
+.blog-post h1 {
+  font-size: 2.5em;
+  margin: 0 0 .2em 0;
+}
+.blog-post .meta {
+  margin: 0 20%;
+}
+
+/* BLOG HEADER */
+header #blog-title {
+  max-width: 4em;
+  margin-left: 5%;
+  position: fixed;
+  background-color: #32CD32;
+  padding: .2em;
+  transition: background-color .5s;
+  -webkit-transition: background-color .5s;
+}
+header #blog-title:hover {
+  background-color: #cd32cd;
+}
+
+header #blog-title a {
+  color: #ffffff;
+  font-family: 'Roboto_Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+@media(max-width: 500px){
+  .blog-post .content {
+    margin: 1% 5%;
+  }
+  .blog-post .meta {
+    margin: 0 5%;
+  }
+  header #blog-title {
+    position: static;
+  }
+}
+
+
+

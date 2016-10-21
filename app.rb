@@ -1,21 +1,43 @@
 require 'sinatra'
 require 'sprockets'
 
+module AssetHelpers
+  def asset_path(source)
+    "/images/" + settings.sprockets.find_asset(source).digest_path
+  end
+end
+
 class MySite < Sinatra::Base
 
-  #new sprockets environment
+  #use sprockets to load in images
   set :root, File.dirname(__FILE__)
-  set :environment, Sprockets::Environment.new(root)
+  set :sprockets, Sprockets::Environment.new(root)
+  set :assets_path, File.join(root, 'public')
 
-  environment.append_path "public/css"
-  environment.append_path "public/images"
+  sprockets.append_path "public/css"
+  sprockets.append_path "public/images"
+
+  configure do
+    sprockets.append_path(File.join(root, 'images'))
+    sprockets.append_path(File.join(root, 'css'))
+    sprockets.append_path(File.join(root, 'fonts'))
+    sprockets.append_path(File.join(root, 'javascript'))
+
+    sprockets.context_class.instance_eval do
+      include AssetHelpers
+    end
+  end
+
+  helpers do
+    include AssetHelpers
+  end
 
   get '/' do
     erb :'index'
   end
 
   get '/blog' do
-    erb :'/blog', :views => File.dirname(__FILE__) + '/blog'
+    '_site/_pages/blog.html' #, :views => File.dirname(__FILE__) + '/_pages'
   end
 
   get '/blog/?*' do
@@ -23,10 +45,10 @@ class MySite < Sinatra::Base
   end
 
   def jekyll_blog(path)
-    file_path = File.join(File.dirname(__FILE__), '/blog/_site', path.gsub('/blog', ''))
+    file_path = File.join(File.dirname(__FILE__), '_site', path.gsub('/blog', ''))
+    p file_path
     p "----------------------------------------"
-    file_path = File.join(file_path, 'blog.erb') unless file_path =~ /\.[a-z]+$/i
-
+    file_path = File.join(file_path, 'blog.html') unless file_path =~ /\.[a-z]+$/i
     p file_path
 
     if File.exist?(file_path)
@@ -37,9 +59,5 @@ class MySite < Sinatra::Base
 
     p contents
   end
-
-
-
-
 
 end
