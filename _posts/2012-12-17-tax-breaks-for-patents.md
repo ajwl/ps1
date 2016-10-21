@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: Tax breaks for patents
@@ -6,29 +5,8 @@ date: 2012-12-17 18:14:17.000000000 +00:00
 type: post
 published: true
 status: publish
-categories: []
 tags: []
-meta:
-  _edit_last: '1'
-  other_media: ''
-  other_media_effect: ''
-  video_link: ''
-  main_video: ''
-  meta_title: ''
-  meta_keywords: ''
-  meta_description: ''
-  _googl_shortlink: http://goo.gl/tE7tk
-  image: ''
-  quote-author: Unknown
-  quote-url: http://
-  quote-copy: Unknown
-  audio: http://
-  link-url: http://
-  _oembed_d773b1b914ef11324f7e2e2899a6c003: "{{unknown}}"
-  _oembed_4281cfe995d2fa644a2c8a72b26554d7: "{{unknown}}"
 author: annaleach
-
-
 ---
 
 Found this initiative interesting. Story is from a while ago, but law will be coming into force from April 2013.

@@ -7,6 +7,7 @@ gem 'serve'
 gem "jekyll", "3.2.1"
 
 gem 'kramdown'
+gem 'minima'
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
