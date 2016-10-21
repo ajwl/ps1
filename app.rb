@@ -1,9 +1,11 @@
 require 'sinatra'
+require 'sprockets'
 
 class MySite < Sinatra::Base
 
   #new sprockets environment
-  set :environment, Sprockets::Environment.new
+  set :root, File.dirname(__FILE__)
+  set :environment, Sprockets::Environment.new(root)
 
   environment.append_path "public/css"
   environment.append_path "public/images"
@@ -25,14 +27,15 @@ class MySite < Sinatra::Base
     p "----------------------------------------"
     file_path = File.join(file_path, 'blog.erb') unless file_path =~ /\.[a-z]+$/i
 
+    p file_path
+
     if File.exist?(file_path)
       file = File.open(file_path, 'r+')
       contents = file.read
       file.close
-
-      p contents
-
     end
+
+    p contents
   end
 
 

@@ -20,7 +20,7 @@ Jen Simmons was describing the wonders of the mobile web.
 
 _17:45, [Understanding the Web with Jeremy Keith](http://thewebahead.net/110)_
 
-[![wow cat]../../images/blog-images/wow-cat-1-300x243.jpg)](http://annaleach.net/wp-content/uploads/2016/08/wow-cat-1.jpg) omgerz itz so true
+[![wow cat]images/wow-cat-1-300x243.jpg)](http://annaleach.net/wp-content/uploads/2016/08/wow-cat-1.jpg) omgerz itz so true
 
 Sometimes its good to remember how crazily amazing the internet is. It's easy to forget that when you're moaning about Safari being slow. If you think about it, we’re holding these pieces of glass that are sucking information from the air around us.
 
