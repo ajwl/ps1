@@ -4,7 +4,8 @@ ruby "2.3.1"
 gem 'sinatra'
 gem 'serve'
 
-gem "jekyll", "3.2.1"
+gem 'jekyll', '3.2.1'
+gem 'rack-jekyll'
 
 gem 'kramdown'
 gem 'minima'
@@ -23,5 +24,4 @@ group :jekyll_plugins do
   gem 'open_uri_redirections'
   gem 'sequel'
   gem 'bundler'
-  gem 'sprockets'
 end
