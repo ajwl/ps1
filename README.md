@@ -9,3 +9,5 @@ http://jekyllrb.com/docs/configuration/
 https://github.com/danielmcgraw/Jekyll-Base
 
 http://derekeder.com/blog/hello-world-setting-up-a-jekyll-blog-in-sinatra
+
+https://github.com/stevehodgkiss/sinatra-asset-pipeline
