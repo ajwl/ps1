@@ -6,6 +6,9 @@ gem 'serve'
 
 gem 'jekyll', '3.2.1'
 gem 'rack-jekyll'
+gem 'foreman'
+gem 'rack-contrib'
+gem 'thin'
 
 gem 'kramdown'
 gem 'minima'
