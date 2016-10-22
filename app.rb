@@ -1,4 +1,4 @@
-require 'sinatra/base'
+require 'sinatra'
 
 class MySite < Sinatra::Base
 
