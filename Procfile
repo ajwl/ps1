@@ -1,1 +1,1 @@
-web: jekyll build && thin start
+web: vendor/bin/heroku-php-apache2 _site/
