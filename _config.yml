@@ -6,21 +6,21 @@ include: ['_pages']
 auto: true
 server: false
 permalink: none
+show_dir_listing: false
 
 title: The blog of Anna
-email: your-email@domain.com
+email: ajwleach@gmail.com
 description: Development, personal and otherwise, the blog of Anna Leach.
-
-url: "http://localhost:3000"
-image_base: '/images'
-
 twitter_username: annajleach
 github_username:  ajwl
+
+url: "https://annaleach.herokuapp.com"
+image_base: '/images'
+baseurl: '/blog'
 
 # Build settings
 markdown: kramdown
 
-show_dir_listing: false
-baseurl: '/blog'
+
 
 

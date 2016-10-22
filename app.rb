@@ -23,7 +23,7 @@ class MySite < Sinatra::Base
       contents = file.read
       file.close
     end
-    p contents
+    contents
   end
 
 end
