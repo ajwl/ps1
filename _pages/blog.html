@@ -18,7 +18,7 @@ layout: layout
         <ul>
             {% for post in site.posts %}
             <li>
-                <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
             </li>
             {% endfor %}
         </ul>
