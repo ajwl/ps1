@@ -1,6 +1,6 @@
 port: 3000
 JEKYLL_ENV: development
-exclude: ['views', 'Gemfile', 'app.rb', 'config.ru', 'README.md', 'Gemfile.lock']
+exclude: ['views', 'Gemfile', 'app.rb', 'config.ru', 'README.md', 'Gemfile.lock', 'vendor']
 include: ['_pages']
 
 permalink: none
