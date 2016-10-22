@@ -1,6 +1,7 @@
 require './app.rb'
 require 'rack/jekyll'
 require 'rubygems'
+require 'bundler'
 
 run Rack::Jekyll.new
 
