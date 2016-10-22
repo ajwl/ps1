@@ -9,6 +9,7 @@ gem 'rack-jekyll'
 gem 'foreman'
 gem 'rack-contrib'
 gem 'thin'
+gem 'bundler'
 
 gem 'kramdown'
 gem 'minima'
@@ -26,5 +27,4 @@ group :jekyll_plugins do
   gem 'fileutils', '~> 0.7'
   gem 'open_uri_redirections'
   gem 'sequel'
-  gem 'bundler'
 end
