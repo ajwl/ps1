@@ -2,6 +2,8 @@ require 'sinatra'
 
 class MySite < Sinatra::Base
 
+  run Rack::Jekyll.new
+
   get '/' do
     erb :'index'
   end
