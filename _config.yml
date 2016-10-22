@@ -17,6 +17,7 @@ github_username:  ajwl
 url: "https://annaleach.herokuapp.com"
 image_base: '/images'
 baseurl: '/blog'
+repository: 'https://github.com/ajwl/ps1'
 
 # Build settings
 markdown: kramdown
