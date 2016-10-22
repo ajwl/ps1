@@ -3,8 +3,6 @@ JEKYLL_ENV: development
 exclude: ['views', 'Gemfile', 'app.rb', 'config.ru', 'README.md', 'Gemfile.lock', 'vendor']
 include: ['_pages']
 
-auto: true
-server: false
 permalink: none
 show_dir_listing: false
 
