@@ -13,18 +13,24 @@ author: annaleach
 ---
 When I started doing CSS, and coolly switching background-colors with a word or two, I was horrified to discover that layouts are so difficult.
 
-After all, I thought, **layouts were the whole damn point of CSS** in the first place. Well, turns out they’re a lot easier now than they were 10 years ago. But even then, they’re not that easy.
+<!--excerpt-->
 
-It’s why people use[ bootstrap css](http://getbootstrap.com/css/) all the time. It just puts shit in the centre of the page and lines it up nicely. And god knows it’s kind of a faff doing it any other way.
+After all, I thought, **layouts were the whole damn point of CSS** in the first place. 
+Well, turns out they’re a lot easier now than they were 10 years ago. But even then, they’re not that easy.
 
-[![UL in html]({{ site.image_base }}/Screen-Shot-2016-08-10-at-22.21.27.png)](http://annaleach.net/wp-content/uploads/2016/08/Screen-Shot-2016-08-10-at-22.21.27.png) _That's supposed to become a navigation bar? Turning a UL element into a navigation bar requires more heavy-lifting in CSS than you would hope_
+It’s why people use[ bootstrap css](http://getbootstrap.com/css/) all the time. 
+It just puts shit in the centre of the page and lines it up nicely. 
+And god knows it’s kind of a faff doing it any other way.
 
- 
+![UL in html]({{ site.image_base }}/Screen-Shot-2016-08-10-at-22.21.27.png) 
+_That's supposed to become a navigation bar? Turning a UL element into a navigation bar requires more heavy-lifting in CSS than you would hope_
 
 One of the tasks I set myself on github was to create the “holy grail” of web design - a responsive three column layout with a navigation bar at the top. But I decided to do it three times over.
 ## 1. Once with 'float' and 'block/inline-block' properties
 
-[ >> View Float Website](https://htmlpreview.github.io/?https://github.com/ajwl/holy-grail-3-ways/blob/master/float/float.html)This is the classic way of doing CSS layout right now, it's widely-supported and responsive. Just about.
+[ >> View Float Website](https://htmlpreview.github.io/?https://github.com/ajwl/holy-grail-3-ways/blob/master/float/float.html)
+
+This is the classic way of doing CSS layout right now, it's widely-supported and responsive. Just about.
 ## 2. A second time with flexbox
 
 [ >> View Flexbox Website](https://htmlpreview.github.io/?https://github.com/ajwl/holy-grail-3-ways/blob/master/flexbox/grail.html)

@@ -11,6 +11,8 @@ email: ajwleach@gmail.com
 description: Development, personal and otherwise, the blog of Anna Leach.
 twitter_username: annajleach
 github_username:  ajwl
+github: 'https://github.com/ajwl'
+excerpt_separator: "<!--excerpt-->"
 
 url: "https://annaleach.herokuapp.com"
 image_base: '/images'
