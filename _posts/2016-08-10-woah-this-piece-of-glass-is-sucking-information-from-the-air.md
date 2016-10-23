@@ -14,13 +14,17 @@ author: annaleach
 ---
 Good woooooah moment in episode 110 of [The Web Ahead podcast](http://thewebahead.net), that I listened to today.
 
+<!--excerpt-->
+
 Jen Simmons was describing the wonders of the mobile web.
 > 
 “that website works on a tiny little piece of glass, there’s some sort of radio wave beaming out of the sky and that’s changing what you see on the piece of glass.”
 
 _17:45, [Understanding the Web with Jeremy Keith](http://thewebahead.net/110)_
 
-![wow cat]({{ site.image_base }}/wow-cat-1-300x243.jpg) omgerz itz so true
+![wow cat]({{ site.image_base }}/wow-cat-1-300x243.jpg) 
+
+_omgerz itz so true_
 
 Sometimes its good to remember how crazily amazing the internet is. It's easy to forget that when you're moaning about Safari being slow. If you think about it, we’re holding these pieces of glass that are sucking information from the air around us.
 

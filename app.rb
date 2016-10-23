@@ -2,9 +2,9 @@ require 'sinatra'
 
 class MySite < Sinatra::Base
 
-
   get '/' do
-    erb :'index'
+    excerpts = File.read(File.join('_site/_pages', 'blog_excerpt.html'))
+    erb :'index', locals: { excerpts: excerpts }
   end
 
   get '/blog' do

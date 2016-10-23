@@ -41,13 +41,15 @@ body {
   border-left: 10px solid #32CD32;
   min-height: 100%;
 }
-
 .content {
   margin: 0 20%;
 }
-
 a {
   color: #cd32cd;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 header a{
   text-decoration: none;
@@ -66,19 +68,16 @@ header svg {
 
 /* BLOG STYLES */
 
-/*.blog-post h1, h2, h3 {*/
-  /*font-family: 'Roboto_Condensed', sans-serif;*/
-/*}*/
-
-/*.blog-post p, li, a {*/
-  /*font-family: 'Open Sans', sans-serif;*/
-/*}*/
 .blog-post h1 {
   font-size: 2.5em;
   margin: 0 0 .2em 0;
 }
 .blog-post .meta {
   margin: 0 20%;
+}
+.blog-post em {
+  display: block;
+  font-size: .7em;
 }
 
 /* BLOG HEADER */
