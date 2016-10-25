@@ -7,37 +7,25 @@ published: true
 status: publish
 categories: []
 tags: []
-meta:
-  quote-url: http://
-  quote-author: Unknown
-  image: ''
-  meta_description: ''
-  meta_keywords: ''
-  meta_title: ''
-  main_video: ''
-  video_link: ''
-  other_media_effect: ''
-  other_media: ''
-  _edit_last: '1'
-  link-url: http://
-  quote-copy: Unknown
-  audio: http://
-  _googl_shortlink: http://goo.gl/MZdULc
-author:
-
-
-   annaleach
+author: annaleach
 
 
 ---
-<p>I've been learning Javascript and Jquery over the last six months - from Codeacademy, from two books and from a course at City university. All recommended. Though, the books are hardest. </p>
-<p>I made this calculator using vanilla javascript which went onto be the guts of an interactive we did on Ampp3d. In fact the first interactive we've done. (I guess though you could count our live counters eg. <a href="http://ampp3d.mirror.co.uk/2014/02/21/wayne-rooney-earnings/">the Wayne Rooney salary counter</a> as taking the "input" of user time spent on page.) </p>
-<p>The end result was the ampp3d coffee machine story. </p>
+_This javascript game is out of date_ 
+
+I've been learning Javascript and Jquery over the last six months - from Codeacademy, from two books and from a course 
+at City university. All recommended. Though, the books are hardest.
+I made this calculator using vanilla javascript which went onto be the guts of an interactive we did on Ampp3d. In fact 
+the first interactive we've done. (I guess though you could count our live counters eg. 
+<a href="http://ampp3d.mirror.co.uk/2014/02/21/wayne-rooney-earnings/">the Wayne Rooney salary counter</a> as taking the "input" of user time spent on page.) </p>
+The end result was the ampp3d coffee machine story.
+
 <style>
 			.active{ }<br />
 			.hidden {display: none;}<br />
 			.red {background-color:red;}</p>
 </style>
+
 <h1> How much does your coffee cost you?</h1>
 <h2> What coffee do you buy each day? </h2>
 <div id = "wrapper"; style="float: left; width: 400px; height: 150px">
@@ -77,7 +65,7 @@ The end result was the ampp3d coffee machine story.
 
 Our designer Dave drew it to make it look good, added some internet game tricks he'd learnt from UsVsTh3m and our developer added the CSS so it all fitted behind the design. So it ended up looking like this. 
 
-[![Ampp3d coffee machine ]({{ site.baseurl }}/assets/Screen-Shot-2014-08-12-at-12.52.25.png "Screen Shot 2014-08-12 at 12.52.25")](http://annaleach.net/wp-content/uploads/2014/08/Screen-Shot-2014-08-12-at-12.52.25.png)
+![Ampp3d coffee machine ]({{ site.image_base }}/Screen-Shot-2014-08-12-at-12.52.25.png)
 
 To see it work properly - check [it out on the Ampp3d site here](http://ampp3d.mirror.co.uk/2014/07/22/how-much-will-you-spend-on-coffee-in-your-lifetime-waaay-too-much/). 
 
