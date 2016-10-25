@@ -8,20 +8,6 @@ status: publish
 categories: []
 tags: []
 meta:
-  _edit_last: '1'
-  other_media: ''
-  other_media_effect: ''
-  video_link: ''
-  main_video: ''
-  meta_title: ''
-  meta_keywords: ''
-  meta_description: ''
-  image: ''
-  quote-author: Unknown
-  quote-url: http://
-  quote-copy: Unknown
-  audio: http://
-  link-url: http://
   _css_code: "\t\t.hidden {\r\n\t\t\tdisplay: none;\r\n\t\t}\r\n\t\t\r\n\t\t.active
     {\r\n\t\t\t\r\n\t\t}\r\n\r\n             #bigBox2 {\r\n\t\tbackground-color: blue;\r\n\t\theight:
     60px;\r\n\t\twidth:200px;\r\n  \t\tmargin-left: 65px;\r\n\t\t\t\t\r\n\t\t}\r\n\t\t\r\n\t\t#smallBox
@@ -31,13 +17,12 @@ meta:
     {\r\n\t\tfloat: left;\r\n\t\t}\r\n\t\t\r\n\t\t#picture-wrapper {\r\n\t\tpadding:
     10px;\r\n\t\tfloat: right;\r\n\t\t}\r\n"
   _googl_shortlink: http://goo.gl/fSCZAU
-author:
-
-
-   annaleach
+author: annaleach
 
 
 ---
+_These js games are out of date_
+
 <p>It's been great to work with <a href="https://twitter.com/Coneee">Conrad</a> at Ampp3d. And one of the many things I've learned from him is to make sure I align everything that can be aligned on Illustrator. He does not like it when things are not aligned. That is what this game is about. Miss you Conrad.</p>
 <h1 id="heading"> Make Conrad happy by aligning the boxes correctly</h1>
 <div id="box-wrapper">
@@ -53,8 +38,8 @@ author:
 <div class="boxes" id="bigBox"></div>
 </p></div>
 <div id="picture-wrapper">
-<div id="happy" class="hidden"><img src="{{ site.baseurl }}/assets/happy-conrad1-e1408519812465.png" /></div>
-<div id="sad" class="active"><img src="{{ site.baseurl }}/assets/sad-conrad1-e1408519837870.png" /></div>
+<div id="happy" class="hidden"><img src="{{ site.image_base }}/happy-conrad1-e1408519812465.png" /></div>
+<div id="sad" class="active"><img src="{{ site.image_base }}/sad-conrad1-e1408519837870.png" /></div>
 </p></div>
 <p>		<script src="http://ajax.googleapis.com/ajax/libs/<br />
 jquery/2.0.2/jquery.min.js"></script></p>

@@ -3,12 +3,12 @@ require 'sinatra'
 class MySite < Sinatra::Base
 
   get '/' do
-    excerpts = File.read(File.join('_site/_pages', 'blog_excerpt.html'))
+    excerpts = render_html('blog_excerpt.html')
     erb :'index', locals: { excerpts: excerpts }
   end
 
   get '/blog' do
-    File.read(File.join('_site/_pages', 'blog.html'))
+    render_html('blog.html')
   end
 
   get '/blog/?*' do
@@ -25,6 +25,11 @@ class MySite < Sinatra::Base
       file.close
     end
     contents
+  end
+
+  def render_html(page)
+    html_folder = '_site/_pages'
+    File.read(File.join(html_folder, "#{page.to_s}"))
   end
 
 end

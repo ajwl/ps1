@@ -13,6 +13,6 @@ Found this initiative interesting. Story is from a while ago, but law will be co
 
 Profits directly attributable to patents owned or wholly-licensed by a business will be taxed at 10% not 23% - the new corporation tax rate.
 
-http://www.theregister.co.uk/2012/10/09/patent_box_tax_cut_impact_on_business/
+[The Register](http://www.theregister.co.uk/2012/10/09/patent_box_tax_cut_impact_on_business/)
 
 So patent anything you damn well can.
