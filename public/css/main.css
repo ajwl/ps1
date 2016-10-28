@@ -16,6 +16,7 @@ h1, h2, h3,
 h2 a,
 h3 a {
   font-family: 'Roboto_Condensed', sans-serif;
+  text-decoration: none;
 }
 p, li,
 p a {
@@ -69,6 +70,12 @@ a:visited {
 header svg {
   width: 1.5em;
   padding-right: 1em;
+}
+
+@media(max-width:500px){
+  .content{
+    margin: 1% 5%;
+  }
 }
 
 /* ---------------  BLOG ---------------  */
