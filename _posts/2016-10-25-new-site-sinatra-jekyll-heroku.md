@@ -28,7 +28,8 @@ The first step was to grab the old content. There weren't loads of posts but I w
 This blog [how to migrate from wordpress to jekyll](http://vitobotta.com/how-to-migrate-from-wordpress-to-jekyll/) was the most helpful by far. 
 Though I ended up picking and choosing exactly what to follow. 
 
-You can quickly export all your blog posts and metadata from wordpress, but they come out in a zip file surrounded by a lot of junk html. 
+You can quickly export all your blog posts and metadata from wordpress, there's a button somewhere in the dashboard, 
+but they come out in a zip file surrounded by a lot of junk html. 
 
 He recommends using a [gem Downmarkit](https://github.com/cousine/downmark_it) to load in the html posts and turn out text formatted in markdown, the format that Jekyll blogs 
 are written in. This was very helpful. 
@@ -79,6 +80,11 @@ However, it was when I got to mounting the Jekyll blog on a basic Sinatra framew
 After faffing around with the Jekyll and Sinatra parts in entirely separate diretories, and then having them all in the same 
 root directory, I eventually figured out the current structure, that can be seen [in the site github](https://github.com/ajwl/ps1). 
 
+Basically I put the config.ru file for Sinatra, and the config.yml file for Jekyll both in the root directory. I allowed 
+Jekyll to pick up markdown files from the default _pages directory and render them into blog/_site. It uses 
+_layouts to display them correctly - as per a standard Jekyll install. 
+
+
 ### 2) Build a Sinatra route to pick up the rendered html display it as a webpage. 
 
 This post by [Derek Eder on setting up a Jekyll blog in Sinatra](http://derekeder.com/blog/hello-world-setting-up-a-jekyll-blog-in-sinatra)
@@ -120,15 +126,40 @@ The second line returns the blog homepage if illegal characters are found in the
 If a file exists at that location, sinatra opens it, reads it out and serves up its contents, ie. a full html file. 
 
 ### 3) Images and assets 
+I wanted to keep all the images in one directory, avoiding having to host the blog ones in one place, and the site ones in another. 
+The solution I reached was to host all the images Sinatra style in a `public/images` directory. 
+
+To make these files accessible to the blog, I had to make sure the markdown posts were pointing to the correct images. 
+In the markdown files from which the posts are generated, I wrote image links like this: `({{ site.image_base }}/cat-picture.png)`
+In my config.yml file for Jekyll, I set the image_base property for the site as: `image_base: '/images'`. So when the file is 
+rendered into html, it comes out like: 
+```html
+<img src="/images/cat-picture.jpg" alt="wow cat" />
+```
+If you're wondering what happened to the "public" in the `public/images` directory above, it's a Sinatra convention that assets are 
+stored in there, but that the public directory doesn't appear in the path. So http://www.mysite.com/images/cat-picture.jpg will work,
+even though there's this extra "public" level. There is more about this is the (sparse Sinatra documentation)[http://www.sinatrarb.com/configuration.html]
+ and also StackOverflow etc. 
 
 ### 4) Exclude all the Sinatra crap that gets tangled up in Jekyll.
 
-Use the excludes: setting in Jekyll's configuration file  
+Having Jekyll and Sinatra running from the same root folder caused a lot of things to get tangled up. 
+Use the `excludes` setting in Jekyll's `config.yml` to add all directory names that Jekyll doesn't need to know about. (See 
+also below for more on the excludes property).
 
-### 5) Create a dev and environments with Jk
+### 5) Create a dev and production environment for Jeykll
+By setting up a different configuration file `_config_dev.yml` and directing Jekyll to use it when I was building the Jekyll
+site in local, I made it much easier to specify different environment variables like urls etc etc. 
 
-See [all the code](https://github.com/ajwl/ps1) 
-
+```bash
+jekyll build --config _config.yml,_config_dev.yml
+```
+This command adds all the configuration from _config.yml, then checks _config_dev.yml, and if it finds duplicate values, 
+ gives the _config_dev.yml values precedence. I only had one thing in there. 
+ 
+ ```
+url: "http://localhost:3000"
+```
 
 ## Deploying the lot to Heroku 
 
@@ -153,6 +184,8 @@ the excludes array in Jekyll's `config.yml` file.
 exclude: ['views', 'Gemfile', 'app.rb', 'config.ru', 'README.md', 'Gemfile.lock', 'vendor', 'bin']
 ```
 
-As the name suggests, `exclude` stops Jekyll trying to render stuff that is to do with Sinatra. This saved me a headache.
+As the name suggests, `exclude` stops Jekyll trying to render stuff that is to do with Sinatra. I initially hadn't included
+bin or vendor as I hadn't created those directorires myself. However, this saved me a lot of problems.
 
 
+See [all the code](https://github.com/ajwl/ps1) 
