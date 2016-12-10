@@ -28,21 +28,28 @@ _That's supposed to become a navigation bar? Turning a UL element into a naviga
 One of the tasks I set myself on github was to create the “holy grail” of web design - a responsive three column layout with a navigation bar at the top. But I decided to do it three times over.
 ## 1. Once with 'float' and 'block/inline-block' properties
 
+![Float]({{ site.image_base }}/block.png)
+
 [ >> View Float Website](https://htmlpreview.github.io/?https://github.com/ajwl/holy-grail-3-ways/blob/master/float/float.html)
 
 This is the classic way of doing CSS layout right now, it's widely-supported and responsive. Just about.
 ## 2. A second time with flexbox
+
+![Flexbox]({{ site.image_base }}/flexbox.png)
 
 [ >> View Flexbox Website](https://htmlpreview.github.io/?https://github.com/ajwl/holy-grail-3-ways/blob/master/flexbox/grail.html)
 
 The [Flexbox spec is described here on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes).
 ## 3. A third time with grid 
 
+
+![Grid]({{ site.image_base }}/grid.png)
+
 [ >> View Grid Website](https://htmlpreview.github.io/?https://github.com/ajwl/holy-grail-3-ways/blob/master/grid/grail.html)
 
 Grid is an experimental CSS property that, yes produces grids. Nice flexible grids, with hardly any code needed at all. I really like this one.[ Grid is described here on MDN.](https://developer.mozilla.org/en-US/docs/Web/CSS/grid)
 
-To view this site you need to go into Chrome or whichever browser you are using and enable experimental features: Paste _chrome://flags_ into the URL bar and scroll down to the option to Enable experimental Web Platform features.
+To view this site you need to go into Chrome or whichever browser you are using and enable experimental features: Paste `chrome://flags` into the URL bar and scroll down to the option to Enable experimental Web Platform features.
 
 I also delve into some fun CSS transitions and transforms because why the hell not. I really like skew.
 
