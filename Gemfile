@@ -11,8 +11,8 @@ gem 'rack-contrib'
 gem 'thin'
 gem 'bundler'
 
-gem 'kramdown'
-gem 'minima'
+gem 'kramdown', "~>1.5.0"
+gem 'rouge'
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.

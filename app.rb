@@ -23,8 +23,12 @@ class MySite < Sinatra::Base
       file = File.open(file_path, 'r')
       contents = file.read
       file.close
+      contents
+    else
+      not_found do
+        status 404
+      end
     end
-    contents
   end
 
   def render_html(page)

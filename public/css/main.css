@@ -1,5 +1,7 @@
 /* ---------------  SHARED ---------------  */
 
+@import url(code-highlighting.css);
+
 @font-face {
   font-family: 'Roboto_Condensed';
   src: url('../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf') format('truetype');
@@ -48,6 +50,7 @@ body {
   margin: 0;
   border-left: 10px solid #32CD32;
   min-height: 100%;
+  padding: 2em 0;
 }
 .content {
   margin: 0 20%;

@@ -1,7 +1,10 @@
-port: 3000
-JEKYLL_ENV: development
 exclude: ['views', 'Gemfile', 'app.rb', 'config.ru', 'README.md', 'Gemfile.lock', 'vendor', 'bin']
 include: ['_pages']
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+scope: '.highlight'
 
 permalink: none
 show_dir_listing: false
@@ -19,8 +22,7 @@ image_base: '/images'
 baseurl: '/blog'
 repository: 'https://github.com/ajwl/ps1'
 
-# Build settings
-markdown: kramdown
+
 
 
 
