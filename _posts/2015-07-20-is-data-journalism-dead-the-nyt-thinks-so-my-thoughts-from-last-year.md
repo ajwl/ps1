@@ -15,7 +15,7 @@ author: annaleach
 ---
 I was interested to see that The New York Times' data journalism blog the Upshot recently published a piece called '[Death to Data Journalism](http://www.nytimes.com/2015/06/20/upshot/death-to-data-journalism.html?abt=0002&abg=0)'. This is a key sentence:
 > 
-You’ll notice that at least a couple of us find the phrase “data journalism” to be a bit strange.
+You'll notice that at least a couple of us find the phrase “data journalism” to be a bit strange.
 
 Data journalism, ultimately, has the same aim as “quote journalism” and “anecdote journalism.” They all aspire to be “fact journalism” or, more eloquently, journalism.
 
