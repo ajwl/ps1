@@ -12,7 +12,7 @@ tags:
 author: annaleach
 
 ---
-I was the editor of the Mirror’s data blog [Ampp3d](http://www.mirror.co.uk/news/ampp3d/?pageNumber=3) for a year. 
+I was the editor of the Mirror's data blog [Ampp3d](http://www.mirror.co.uk/news/ampp3d/?pageNumber=3) for a year. 
 These are some things I learned trying to make data journalism mainstream.
 
 ### 1. Interactives make an enormous amount of sense as a doorway to a big spreadsheet.
@@ -22,17 +22,17 @@ not catching your attention? How about knife attacks on your route home from wor
 are a natural tool for data journalists.
 
 ### 2. People love real-time.
-Even fake real time. Though it’s only the big numbers it really works for. You know that urban legend – 
-if Bill Gates dropped a $50 dollar bill it wouldn’t be worth his time to bend down and pick it up, because he’d already
+Even fake real time. Though it's only the big numbers it really works for. You know that urban legend – 
+if Bill Gates dropped a $50 dollar bill it wouldn't be worth his time to bend down and pick it up, because he'd already
  have made twice that in interest in the 10 seconds it would take him.
 
 One of our biggest hits was [basically a visualisation of that](http://ampp3d.mirror.co.uk/2014/02/21/wayne-rooney-earnings/), with a different millionaire.
 
 ![Screen Shot 2015-09-01 at 22.32.40]({{ site.image_base }}/Screen-Shot-2015-09-01-at-22.32.40.png)
 
-### 3. Polls and quizzes are great and there is no reason you can’t use a question and answer format to deal with complex and weighty topics.
+### 3. Polls and quizzes are great and there is no reason you can't use a question and answer format to deal with complex and weighty topics.
 
-This story – [Does the Home Office Think You’re Gay?](http://www.mirror.co.uk/news/ampp3d/home-office-think-youre-gay-5280895) 
+This story – [Does the Home Office Think You're Gay?](http://www.mirror.co.uk/news/ampp3d/home-office-think-youre-gay-5280895) 
 – was more new formats than data journalism. But quizzes are another good way to find yourself in the dataset, in the news 
 story. Even to build empathy by putting you into the mindset of the participant – in this case a gay refugee. For a nominally 
 small story about a gay asylum seeker this "Does the Home Office think you're gay?" Quiz actually beat out Kim Kardashian 
@@ -52,17 +52,17 @@ One of the reasons it was interesting to work with my old boss [Martin Belam](ht
 
 ### 6. Deal with the mobile screen.
 
-It’s long. Writing for mobile not desktop is increasingly becoming the norm. But it's more than just putting things in one column, you can really make the format work for you.
+It's long. Writing for mobile not desktop is increasingly becoming the norm. But it's more than just putting things in one column, you can really make the format work for you.
 
 Another UX / screen design thing Martin did once or twice which I really loved is making a kind of comic strip that runs vertically down the page and so reveals as you scroll down it. EG. This [story about the effect Tory education minister Michael Gove had on teacher morale](http://ampp3d.mirror.co.uk/2014/01/07/that-gove-effect-on-teacher-morale-in-full/).
 
 It makes space part of the story.
 
 We did it sometimes with images where you redo a photo or graph several times with more notes on it each time. Again the
- idea is it reveals the narrative as you scroll. Yes, Buzzfeed’s lists basically work like this, but this takes it further.
+ idea is it reveals the narrative as you scroll. Yes, Buzzfeed's lists basically work like this, but this takes it further.
 
 ### 7. Of course you should annotate graphs.
-You’re a journalist – you’re telling a story. Use the graph to tell a story. Thanks
+You're a journalist – you're telling a story. Use the graph to tell a story. Thanks
 
 ![Ampp3d graph benefits cuts in full]({{ site.image_base }}/Welfare-spending-template.jpg)
 
@@ -75,7 +75,7 @@ In this day and age people expect you to scrape, know deep level excel, use Phot
 ### 9. Developing can be extremely creative. 
 
 The games on our sister site [UsVsTh3m](http://usvsth3m.com/) plus some of the widgets we managed to produce on Ampp3d 
-really opened my eyes to how creative coding and developing can be. After all it’s fun to control the whole page, rather 
+really opened my eyes to how creative coding and developing can be. After all it's fun to control the whole page, rather 
 than just the 600 words in the middle of it.
 
 That plus a few macroeconomic factors affecting the journalism industry are the main reasons I decided to make the switch
