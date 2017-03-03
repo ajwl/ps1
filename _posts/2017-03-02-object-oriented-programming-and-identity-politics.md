@@ -41,9 +41,9 @@ This piece is about its rise. Why identity politics and why now?
 ## Why now 
 
 One prevalent theory is "[special snowflake syndrome](https://en.wikipedia.org/wiki/Generation_Snowflake)".  
-Millenials we are told, came up with identity politics because they are special snowflakes. Because they are a 
+Millenials, we are told, came up with identity politics because they are "special snowflakes". Because they are, supposedly, a 
 uniquely sensitive generation. Advertising told them to be themselves. They got too much attention from their parents, 
-and they got medals for coming last on sports day. Even if people 
+and they got medals for coming last on sports day etc etc. Even if people 
 don’t articulate this in as extreme a fashion as
  [lead proponents like Clare Fox](https://www.theguardian.com/science/2016/nov/28/snowflake-insult-disdain-young-people), it is an underlying assumption in 
 many descriptions of identity politics. 
@@ -51,9 +51,9 @@ many descriptions of identity politics.
 And worst of all, the criticism runs, because everyone is so sensitive about everything a politically correct culture 
 has sprung up that polices this new identity space. 
 
-To me that it’s a crap reason. 
+To me that it’s a crap rationale. 
 
-I literally cannot remember any school sports day whatsoever. But I’ll tell you something that has affected almost 
+I cannot remember any school sports day whatsoever. But I’ll tell you something that has affected almost 
 every day of my life for the last 15 years. The internet. 
 
 Of course the rise of a political movement has many roots and reasons. From social changes to the failures and 
@@ -125,7 +125,7 @@ request and response pattern.
 You posting your credit card details to pay for something. You posting a comment on a blog. You fill in a form 
 and you send it back to the server. 
 
-This GETTING and POST is intrinsic to how http works. HTTP GET requests send content to your browser, HTTP POST 
+This "getting" and "posting" is intrinsic to how http works. HTTP GET requests send content to your browser, HTTP POST 
 requests send data from you back.
 
 In object oriented programming, the paradigm that has dominated web development for the past 15-20 years, that 
@@ -187,7 +187,7 @@ Any thoughts?
 
 
 ### *NOTE 1
-I know I'm really skiting over this part. 
+I know I'm really skimming over this part. 
 
 
 ### *NOTE 2 
@@ -196,7 +196,7 @@ configuring interaction online as streams of data rather than request and respon
  code towards functional programming is another. This shift also prioritises the idea of relationships between data streams. 
 
 Will there be cultural ramifications from people being represented as streams of events rather than objects with set 
-attributes? Quite possibly, I have no idea what they will be. 
+attributes? Quite possibly, watch this space. 
 
 
 
