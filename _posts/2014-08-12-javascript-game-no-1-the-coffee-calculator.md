@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [broken] Javascript Game No.1 - the coffee calculator
+title: '[broken] Javascript Game No.1 - the coffee calculator'
 date: 2014-08-12 14:48:16.000000000 +01:00
 type: post
 published: true
@@ -46,5 +46,3 @@ The end result was the ampp3d coffee machine story.
 <p>Our designer Dave drew it to make it look good, added some internet game tricks he'd learnt from UsVsTh3m and our developer added the CSS so it all fitted behind the design. So it ended up looking like this. </p>
 <p><a href="http://annaleach.net/wp-content/uploads/2014/08/Screen-Shot-2014-08-12-at-12.52.25.png"><img src="{{ site.baseurl }}/assets/Screen-Shot-2014-08-12-at-12.52.25.png" alt="Ampp3d coffee machine " title="Screen Shot 2014-08-12 at 12.52.25" width="470" height="521" class="aligncenter size-full wp-image-270" /></a></p>
 <p>To see it work properly - check <a href="http://ampp3d.mirror.co.uk/2014/07/22/how-much-will-you-spend-on-coffee-in-your-lifetime-waaay-too-much/">it out on the Ampp3d site here</a>. </p>
-<p>As far as the javascript goes - one of the more difficult bits was getting the javascript to display numbers with the correct number of decimal places. In the end I just copied some code </p>
-<p>Otherwise I've just bound addition functions to the coffee buttons, and multiplication functions to the lifetime bill, and collected them all in the variable runningcost. </p>

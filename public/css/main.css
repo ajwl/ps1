@@ -32,7 +32,7 @@ h1 {
 a svg:hover #twitter,
 a svg:hover #github,
 a svg:hover #linkedin {
- fill: #32CD32;
+ fill: #cd32cd;
 }
 .excerpt .date{
   font-size: .7em;
@@ -48,13 +48,23 @@ a svg:hover #linkedin {
 body {
   position: static;
   margin: 0;
-  border-left: 10px solid #32CD32;
   min-height: 100%;
+  display: flex;
+}
+.container{
   padding: 2em 0;
+  flex: 1 1 97%;
+  -webkit-flex: 1 1 97%;
+}
+.sidebar{
+  flex: 1 1 3%;
+  -webkit-flex: 1 1 3%;
+  background: repeating-linear-gradient(-45deg, #cd32cd, #cd32cd 5px, #3232cd 5px, #3232cd 10px);
 }
 .content {
   margin: 0 20%;
 }
+
 a {
   color: #cd32cd;
 }
@@ -102,7 +112,7 @@ header #blog-title {
   max-width: 4em;
   margin-left: 5%;
   position: fixed;
-  background-color: #32CD32;
+  background-color: #3232cd;
   padding: .2em;
   transition: background-color .5s;
   -webkit-transition: background-color .5s;
@@ -129,6 +139,3 @@ header #blog-title a {
     position: static;
   }
 }
-
-
-
