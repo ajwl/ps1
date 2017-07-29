@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Javascript Game No.1 - the coffee calculator
+title: '[broken] Javascript Game No.1 - the coffee calculator'
 date: 2014-08-12 14:48:16.000000000 +01:00
 type: post
 published: true
@@ -11,12 +11,12 @@ author: annaleach
 
 
 ---
-_This javascript game is out of date_ 
+_This javascript game is out of date_
 
-I've been learning Javascript and Jquery over the last six months - from Codeacademy, from two books and from a course 
+I've been learning Javascript and Jquery over the last six months - from Codeacademy, from two books and from a course
 at City university. All recommended. Though, the books are hardest.
-I made this calculator using vanilla javascript which went onto be the guts of an interactive we did on Ampp3d. In fact 
-the first interactive we've done. (I guess though you could count our live counters eg. 
+I made this calculator using vanilla javascript which went onto be the guts of an interactive we did on Ampp3d. In fact
+the first interactive we've done. (I guess though you could count our live counters eg.
 <a href="http://ampp3d.mirror.co.uk/2014/02/21/wayne-rooney-earnings/">the Wayne Rooney salary counter</a> as taking the "input" of user time spent on page.) </p>
 The end result was the ampp3d coffee machine story.
 
@@ -46,29 +46,3 @@ The end result was the ampp3d coffee machine story.
 <p>Our designer Dave drew it to make it look good, added some internet game tricks he'd learnt from UsVsTh3m and our developer added the CSS so it all fitted behind the design. So it ended up looking like this. </p>
 <p><a href="http://annaleach.net/wp-content/uploads/2014/08/Screen-Shot-2014-08-12-at-12.52.25.png"><img src="{{ site.baseurl }}/assets/Screen-Shot-2014-08-12-at-12.52.25.png" alt="Ampp3d coffee machine " title="Screen Shot 2014-08-12 at 12.52.25" width="470" height="521" class="aligncenter size-full wp-image-270" /></a></p>
 <p>To see it work properly - check <a href="http://ampp3d.mirror.co.uk/2014/07/22/how-much-will-you-spend-on-coffee-in-your-lifetime-waaay-too-much/">it out on the Ampp3d site here</a>. </p>
-<p>As far as the javascript goes - one of the more difficult bits was getting the javascript to display numbers with the correct number of decimal places. In the end I just copied some code </p>
-<p>Otherwise I've just bound addition functions to the coffee buttons, and multiplication functions to the lifetime bill, and collected them all in the variable runningcost. </p>
----layout: posttitle: Javascript Game No.1 - the coffee calculatordate: 2014-08-12 14:48:16.000000000 +01:00type: postpublished: truestatus: publishcategories: []tags: []meta:  quote-url: http://  quote-author: Unknown  image: ''  meta_description: ''  meta_keywords: ''  meta_title: ''  main_video: ''  video_link: ''  other_media_effect: ''  other_media: ''  _edit_last: '1'  link-url: http://  quote-copy: Unknown  audio: http://  _googl_shortlink: http://goo.gl/MZdULcauthor:   annaleach---
-I've been learning Javascript and Jquery over the last six months - from Codeacademy, from two books and from a course at City university. All recommended. Though, the books are hardest. 
-
-I made this calculator using vanilla javascript which went onto be the guts of an interactive we did on Ampp3d. In fact the first interactive we've done. (I guess though you could count our live counters eg. [the Wayne Rooney salary counter](http://ampp3d.mirror.co.uk/2014/02/21/wayne-rooney-earnings/) as taking the "input" of user time spent on page.) 
-
-The end result was the ampp3d coffee machine story. 
-<style>.active{ }<br />.hidden {display: none;}<br />.red {background-color:red;}</p></style>#  How much does your coffee cost you?
-##  What coffee do you buy each day? 
-<div id = "wrapper"; style="float: left; width: 400px; height: 150px"><div class="button" id="cappuccino"><button>Cappuccino</button></div><div class="button" id="latte"><button>Latte</button></div><div class="button" id="americano"><button>Americano</button></div><div class="button" id="expresso"><button>Expresso</button></div><div class="button" id="flatwhite"><button>Flatwhite</button></div><div id = "day-wrapper"; style="float: right; width: 400px; height: 150px">##  You drink <span id="youDrink"> </span> cups a day
-## You spend £<span id="youSpend"> </span>
-<div class="button" id="calculate"><button>Calculate how much you spend on coffee in your LIFE</button></div><div id="results-wrapper">### You will spend £<span id="youSpendYear"> </span> on coffee a year
-### You will spend £ <span id="youSpendLife"> </span> on coffee in your 47-year caffeine-addled working life 
-</div>
-
-
-Our designer Dave drew it to make it look good, added some internet game tricks he'd learnt from UsVsTh3m and our developer added the CSS so it all fitted behind the design. So it ended up looking like this. 
-
-![Ampp3d coffee machine ]({{ site.image_base }}/Screen-Shot-2014-08-12-at-12.52.25.png)
-
-To see it work properly - check [it out on the Ampp3d site here](http://ampp3d.mirror.co.uk/2014/07/22/how-much-will-you-spend-on-coffee-in-your-lifetime-waaay-too-much/). 
-
-As far as the javascript goes - one of the more difficult bits was getting the javascript to display numbers with the correct number of decimal places. In the end I just copied some code 
-
-Otherwise I've just bound addition functions to the coffee buttons, and multiplication functions to the lifetime bill, and collected them all in the variable runningcost. 
