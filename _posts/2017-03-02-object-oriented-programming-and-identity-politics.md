@@ -21,9 +21,8 @@ and political implications. Especially as
 and more and more aspects of our lives are lived and managed
 through different pieces of software.
 
-So this may sound left-field, but hear me out.
-
 <!--excerpt-->
+So this may sound left-field, but hear me out.
 
 ## Identity politics
 
