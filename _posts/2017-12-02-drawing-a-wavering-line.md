@@ -130,3 +130,38 @@ function drawLine(startX, startY){
 drawLine(0, 20);
 
 ```
+
+## Extra things
+
+1.  Stop drawing when you hit the side of the canvas.
+  Now we have a line that is wavering across the canvas, but then continuing forever (console.log() something
+  in the loop and flip open the console
+  and you'll see it is drawing itself far off to the right of the screen.) Using `clearInterval()`, I want to break
+  the `setInterval()` loop when it hits the end of the canvas, the right-edge in the case
+  of this line. That will be when x > the width of the canvas, 500.
+
+  I'm going to rearrange the code slightly to allow this.
+
+  ```javascript
+
+  function drawLine(startX, startY){
+  	var i = 0;
+  	var f = 0;
+
+  	var lineTimer = setInterval(function(){
+  		i++;
+  		const smoothness = 2;
+  		if(i % smoothness === 0 ){
+  			f = f + Math.round(Math.random()*1) - 0.5;
+  		}
+  		x = startX++ + f;
+  		y = startY + f;
+  		drawpoint(x, y);
+  		if(x > 500) {
+  			clearInterval(lineTimer);
+  		}
+  	}, 10)
+  }
+  drawLine(0, 20);
+
+  ```
