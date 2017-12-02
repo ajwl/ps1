@@ -54,15 +54,79 @@ to actually see the line, you need to give it a stroke `.stroke()`. This default
 ```
 
 4. Next we create a function called drawLine, it takes three arguments - the coordinates of a starting point.
-Inside I'm setting `i` as a counter and `r` as a unit for variation.
 
 ```javascript
 
   function drawLine(startX, startY){
-    var i = 0;
-    var r = 0;
   }
+  drawLine(0, 20);
 
 ```
 
-5.  To get the drawing effect, we need to run `setInterval`
+5.  To get the drawing effect, we need to run the drawPoint function many times.
+Using `setInterval`, lets it happen slowly enough so you can see it. This just draws a straight line, slowly.
+
+```javascript
+
+  function drawLine(startX, startY){
+    //draws a straight line from left to right, slowly
+    setInterval(function(){
+        var x = startX++;
+        var y = startY;
+        drawpoint(x, y);
+     }, 100) //speed it up by making the interval smaller
+  }
+
+  drawLine(0, 20);
+
+```
+
+6.  Now we have a drawing line, we can add some of the randomness that makes it look human.
+We'll add a variable I'll call `f` for fluctuation. It's the
+kind of gremlin that causes the direction of the line to be random.
+ We will add a line setting the value of `f` to be either 0.5 or -0.5, depending on the outcome of a call to `Math.random()`. Next, we'll add `f` to the x position and the y position so that this randomly generated number affects the position of the next point drawn.
+
+```javascript
+
+  function drawLine(startX, startY){
+    var f = 0;
+    setInterval(function(){
+        f = f + Math.round(Math.random()*1) - 0.5;
+        var x = startX++ + f;
+        var y = startY + f;
+        drawpoint(x, y);
+     }, 1)
+  }
+
+  drawLine(0, 20);
+
+```
+
+7.  An interesting property we can add in here is smoothness, which gives you more
+control over how random the line is.
+To achieve this we'll add a variable `i` as a counter, inside the body of setInterval we'll iterate i.
+We'll also add a value called `smoothness`. And only change fluctuation `f` when `i`, the number of times the
+function has run is divisible by smoothness.
+
+Basically bigger the smoothness value is, the less times fluctuation will change, so the smoother the line is.
+
+```javascript
+
+function drawLine(startX, startY){
+	var i = 0;
+	var f = 0;
+	setInterval(function(){
+			i++;			
+			const smoothness = 2; //the larger this variable is - the smoother the doodle will be
+			if(i % smoothness === 0 ){
+				f = f + Math.round(Math.random()*1) - 0.5;
+			}
+			var x = startX++ + f;
+			var y = startY + f;
+			drawpoint(x, y);
+	 }, 10)
+}
+
+drawLine(0, 20);
+
+```
