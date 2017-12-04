@@ -133,7 +133,7 @@ drawLine(0, 20);
 
 ## Extra things
 
-1.  Stop drawing when you hit the side of the canvas.
+### Stop drawing when you hit the side of the canvas.
   Now we have a line that is wavering across the canvas, but then continuing forever (console.log() something
   in the loop and flip open the console
   and you'll see it is drawing itself far off to the right of the screen.) Using `clearInterval()`, I want to break
@@ -165,3 +165,51 @@ drawLine(0, 20);
   drawLine(0, 20);
 
   ```
+
+  ### Set off 25 lines at the same time
+  We can call draw line more than once to set off a bunch of lines from left to right. Note the slight
+  delay between the start of the first and the start of the last. Each stops when it gets to the end of the
+  canvas element.
+
+  ```javascript
+
+  function drawLine(startX, startY){
+  	let i = 0;
+  	let f = 0;
+
+  	const lineTimer = setInterval(function(){
+  		i++;
+  		const smoothness = 2;
+  		if(i % smoothness === 0 ){
+  			f = f + Math.round(Math.random()*1) - 0.5;
+  		}
+  		x = startX++ + f;
+  		y = startY + f;
+  		drawpoint(x, y);
+  		if(x > 500) {
+  			clearInterval(lineTimer);
+  		}
+  	}, 10)
+  }
+
+  // all the lines set off at once
+  function startDrawing(){
+  	let yPoint = 0;
+  	for(let i =0; i < 25; i++)){
+  		yPoint += 20;
+  		drawLine(0, yPoint);
+  	}
+  }
+
+  startDrawing();
+
+  ```
+
+
+  ### Set off one line after another
+  It would be cool if one line started as the one above stopped. We can achieve that using promises. Roughly,
+  the promise resolves when the line completes. The resolution of that promise triggers off the next one, and so on
+  until they are all completed.
+
+
+  
