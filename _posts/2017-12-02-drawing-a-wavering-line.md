@@ -195,7 +195,7 @@ drawLine(0, 20);
   // all the lines set off at once
   function startDrawing(){
   	let yPoint = 0;
-  	for(let i =0; i < 25; i++)){
+  	for(let i =0; i < 25; i++){
   		yPoint += 20;
   		drawLine(0, yPoint);
   	}
@@ -205,11 +205,120 @@ drawLine(0, 20);
 
   ```
 
-
   ### Set off one line after another
-  It would be cool if one line started as the one above stopped. We can achieve that using promises. Roughly,
-  the promise resolves when the line completes. The resolution of that promise triggers off the next one, and so on
-  until they are all completed.
+  It would be cool if one line started as the one above stopped. We can achieve that using promises. Roughly: we
+  still have the for loop, triggering off one line after another. The difference is that because we are using promises,
+  the for loop now waits for each line to be completed before launching the next iteration and next line.
+
+  The startDrawing funciton has to be async because we want to use await inside it, to create the waiting behaviour.  
+
+```javascript
+
+function drawLine(startX, startY){
+	let i = 0;
+	let f = 0;
+
+	return new Promise((res,rej) => {
+		const lineTimer = setInterval(function(){
+			i++;
+			const smoothness = 2;
+			if(i % smoothness === 0 ){
+				f = f + Math.round(Math.random()*1) - 0.5;
+			}
+			x = startX++ + f;
+			y = startY + f;
+			drawpoint(x, y);
+			if(x > 500) {
+				clearInterval(lineTimer);
+				res();
+			}
+		}, 2)
+	}
+)
+
+}
+
+// all the lines set off at once
+async function startDrawing(){
+	let yPoint = 0;
+	for(i=0; i <25; i++){
+		yPoint += 20;
+		await drawLine(0, yPoint);
+	}
+}
+
+startDrawing();
+
+```
+
+### Create a grey landscape with colours and lines
+
+This is kind of fun. I thickened the line and added a colour switcher with 3 shades of grey.
+I realised I needed `ctx.beginPath()` and `ctx.closePath()` to avoid all lines changing when
+one line changed.
+
+```javascript
+function drawpoint(x, y, colour) {
+	ctx.beginPath();
+	ctx.moveTo(x, y);
+	ctx.lineTo(x + 1, y + 1);
+	ctx.strokeStyle = colour;
+	ctx.lineWidth = 20;
+	ctx.stroke();
+	ctx.closePath();
+};
+
+function drawLine(startX, startY, colour){
+	let i = 0;
+	let f = 0;
+
+	return new Promise((res,rej) => {
+		const lineTimer = setInterval(function(){
+			i++;
+
+			const smoothness = 2;
+			if(i % smoothness === 0 ){
+				f = f + Math.round(Math.random()*1) - 0.5;
+			}
+
+			x = startX++ + f;
+			y = startY + f;
+
+			drawpoint(x, y, colour);
+
+			if(x > 500) {
+				clearInterval(lineTimer);
+				res();
+			}
+		}, 2)
+	}
+)}
+
+function findColour(index){
+	if(index % 3 === 0) {
+		return '#999999';
+	}
+	else if(index % 2 === 0){
+		return '#555555';
+	}
+	return '#111111';
+}
+
+// all the lines set off at once
+async function startDrawing(){
+	let yPoint = 0;
+	for(i=0; i <25; i++){
+		yPoint += 20;
+		let colour = findColour(i);
+		await drawLine(0, yPoint, colour);
+	}
+}
+
+startDrawing();
+
+```
+
+It looks like this:
 
 
-  
+### See all the code [on github]()
