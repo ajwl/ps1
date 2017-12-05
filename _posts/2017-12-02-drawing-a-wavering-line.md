@@ -20,13 +20,12 @@ random lines that a human might draw is harder.
 <!--excerpt-->
 
 A Mozfest 2017 workshop I went to last month showed a cool way to do it. It was run by UCL
-student Amy Mather, who explained Maths to me that I only partly understand. But was still really
-cool. Here's the [github for her workshop](https://github.com/MiniGirlGeek/code_doodling.git) that involves
+student Amy Mather. Here's the [github for her workshop](https://github.com/MiniGirlGeek/code_doodling.git) that involves
 circles and trigonometry.
 
 I have focussed just on drawing a line.
 
-[View the working site here](https://ajwl.github.io/drawing-lines/)
+[View the live examples here](https://ajwl.github.io/drawing-lines/)
 
 [View all the code](https://github.com/ajwl/drawing-lines)
 
