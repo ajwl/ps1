@@ -21,26 +21,32 @@ random lines that a human might draw is harder.
 
 A Mozfest 2017 workshop I went to last month showed a cool way to do it. It was run by UCL
 student Amy Mather, who explained Maths to me that I only partly understand. But was still really
-cool. Here's the [github for the workshop](https://github.com/MiniGirlGeek/code_doodling.git)
+cool. Here's the [github for her workshop](https://github.com/MiniGirlGeek/code_doodling.git) that involves
+circles and trigonometry.
 
-I stuck two examples in a simple page here:
+I have focussed just on drawing a line.
+
+[View the working site here](https://ajwl.github.io/drawing-lines/)
+
+[View all the code](https://github.com/ajwl/drawing-lines)
 
 This is basically how it works:
 
-1.   Create a canvas element in an html file.
+### 1. Create a canvas element in an html file.
 
-2.   Select it in the javascript. And create a drawing context for it, using the `getContext()` method.
-We only need 2d.
+### 2. Select it in the javascript.
+Then create a drawing context for it, using the `getContext()` method. We only need 2d.
 
-  ```javascript
+```javascript
 
-    var ctx = document.getElementById("doodleCanvas").getContext("2d");
+    var ctx = document.getElementById("doodleCanvas1").getContext("2d");
 
-  ```
+```
 
-3.   Canvas doesn't have an inbuilt drawing method, so Amy just use a simple function that basically draws a point.
-It takes starting co-ordinates and moves them both 1pixel. To start drawing in canvas you need `.moveTo(x,y)` which
-takes coordinates and sets a starting place. To draw you need `lineTo(x,y)` which sets the finishing place, and
+### 3. Create a function that draws a point
+Canvas doesn't have an inbuilt drawing method, so Amy just use a simple function that basically draws a point.
+It takes starting co-ordinates and moves them both 1pixel. To set a starting point in canvas you need `.moveTo(x,y)` which
+takes coordinates and allows you to begin. To draw you need `lineTo(x,y)` which sets the finishing place, and
 to actually see the line, you need to give it a stroke `.stroke()`. This defaults to black, 1px.
 
 ```javascript
@@ -53,7 +59,9 @@ to actually see the line, you need to give it a stroke `.stroke()`. This default
 
 ```
 
-4. Next we create a function called drawLine, it takes three arguments - the coordinates of a starting point.
+### 4. Create a wrapper function for the draw line code
+
+Next we create a function called drawLine, it takes three arguments - the coordinates of a starting point.
 
 ```javascript
 
@@ -63,7 +71,8 @@ to actually see the line, you need to give it a stroke `.stroke()`. This default
 
 ```
 
-5.  To get the drawing effect, we need to run the drawPoint function many times.
+### 5. Get the drawing effect using setInterval
+To get the drawing effect, we need to run the drawPoint function many times.
 Using `setInterval`, lets it happen slowly enough so you can see it. This just draws a straight line, slowly.
 
 ```javascript
@@ -81,10 +90,12 @@ Using `setInterval`, lets it happen slowly enough so you can see it. This just d
 
 ```
 
-6.  Now we have a drawing line, we can add some of the randomness that makes it look human.
+### 6.  Add randomness
+Now we have a drawing line, we can add some of the randomness that makes it look human.
 We'll add a variable I'll call `f` for fluctuation. It's the
 kind of gremlin that causes the direction of the line to be random.
- We will add a line setting the value of `f` to be either 0.5 or -0.5, depending on the outcome of a call to `Math.random()`. Next, we'll add `f` to the x position and the y position so that this randomly generated number affects the position of the next point drawn.
+
+We will add a line setting the value of `f` to be either 0.5 or -0.5, depending on the outcome of a call to `Math.random()`. Next, we'll add `f` to the x position and the y position so that this randomly generated number affects the position of the next point drawn.
 
 ```javascript
 
@@ -102,7 +113,8 @@ kind of gremlin that causes the direction of the line to be random.
 
 ```
 
-7.  An interesting property we can add in here is smoothness, which gives you more
+### 7.  Add smoothness
+An interesting property we can add in here is smoothness, which gives you more
 control over how random the line is.
 To achieve this we'll add a variable `i` as a counter, inside the body of setInterval we'll iterate i.
 We'll also add a value called `smoothness`. And only change fluctuation `f` when `i`, the number of times the
@@ -142,75 +154,75 @@ drawLine(0, 20);
 
   I'm going to rearrange the code slightly to allow this.
 
-  ```javascript
+```javascript
 
-  function drawLine(startX, startY){
-  	var i = 0;
-  	var f = 0;
+function drawLine(startX, startY){
+	var i = 0;
+	var f = 0;
 
-  	var lineTimer = setInterval(function(){
-  		i++;
-  		const smoothness = 2;
-  		if(i % smoothness === 0 ){
-  			f = f + Math.round(Math.random()*1) - 0.5;
-  		}
-  		x = startX++ + f;
-  		y = startY + f;
-  		drawpoint(x, y);
-  		if(x > 500) {
-  			clearInterval(lineTimer);
-  		}
-  	}, 10)
-  }
-  drawLine(0, 20);
+	var lineTimer = setInterval(function(){
+		i++;
+		const smoothness = 2;
+		if(i % smoothness === 0 ){
+			f = f + Math.round(Math.random()*1) - 0.5;
+		}
+		x = startX++ + f;
+		y = startY + f;
+		drawpoint(x, y);
+		if(x > 500) {
+			clearInterval(lineTimer);
+		}
+	}, 10)
+}
+drawLine(0, 20);
 
-  ```
+```
 
-  ### Set off 25 lines at the same time
-  We can call draw line more than once to set off a bunch of lines from left to right. Note the slight
-  delay between the start of the first and the start of the last. Each stops when it gets to the end of the
-  canvas element.
+### Set off 25 lines at the same time
+We can call `drawLine()` more than once to set off a bunch of lines from left to right. Note the slight
+delay between the start of the first and the start of the last. Each stops when it gets to the end of the
+canvas element.
 
-  ```javascript
+```javascript
 
-  function drawLine(startX, startY){
-  	let i = 0;
-  	let f = 0;
+function drawLine(startX, startY){
+	let i = 0;
+	let f = 0;
 
-  	const lineTimer = setInterval(function(){
-  		i++;
-  		const smoothness = 2;
-  		if(i % smoothness === 0 ){
-  			f = f + Math.round(Math.random()*1) - 0.5;
-  		}
-  		x = startX++ + f;
-  		y = startY + f;
-  		drawpoint(x, y);
-  		if(x > 500) {
-  			clearInterval(lineTimer);
-  		}
-  	}, 10)
-  }
+	const lineTimer = setInterval(function(){
+		i++;
+		const smoothness = 2;
+		if(i % smoothness === 0 ){
+			f = f + Math.round(Math.random()*1) - 0.5;
+		}
+		x = startX++ + f;
+		y = startY + f;
+		drawpoint(x, y);
+		if(x > 500) {
+			clearInterval(lineTimer);
+		}
+	}, 10)
+}
 
-  // all the lines set off at once
-  function startDrawing(){
-  	let yPoint = 0;
-  	for(let i =0; i < 25; i++){
-  		yPoint += 20;
-  		drawLine(0, yPoint);
-  	}
-  }
+// all the lines set off at once
+function startDrawing(){
+	let yPoint = 0;
+	for(let i =0; i < 25; i++){
+		yPoint += 20;
+		drawLine(0, yPoint);
+	}
+}
 
-  startDrawing();
+startDrawing();
 
-  ```
+```
 
-  ### Set off one line after another
-  It would be cool if one line started as the one above stopped. We can achieve that using promises. Roughly: we
-  still have the for loop, triggering off one line after another. The difference is that because we are using promises,
-  the for loop now waits for each line to be completed before launching the next iteration and next line.
+### Set off one line after another.
+It would be cool if one line started as the one above stopped. We can achieve that using promises. Roughly: we
+still have the for loop, triggering off one line after another. The difference is that because we are using promises,
+the for loop now waits for each line to be completed before launching the next iteration and next line.
 
-  The startDrawing funciton has to be async because we want to use await inside it, to create the waiting behaviour.  
+The `startDrawing` function has to be async because we want to use `await` inside it, to create the waiting behaviour.  
 
 ```javascript
 
@@ -258,6 +270,7 @@ I realised I needed `ctx.beginPath()` and `ctx.closePath()` to avoid all lines c
 one line changed.
 
 ```javascript
+
 function drawpoint(x, y, colour) {
 	ctx.beginPath();
 	ctx.moveTo(x, y);
@@ -317,8 +330,6 @@ async function startDrawing(){
 startDrawing();
 
 ```
-
-It looks like this:
 
 
 ### See all the code [on github](git@github.com:ajwl/drawing-lines.git)
