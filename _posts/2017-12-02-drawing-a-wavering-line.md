@@ -23,7 +23,7 @@ A Mozfest 2017 workshop I went to last month showed a cool way to do it. It was 
 student Amy Mather. Here's the [github for her workshop](https://github.com/MiniGirlGeek/code_doodling.git) that involves
 circles and trigonometry.
 
-I have focussed just on drawing a line.
+In this explainer post I have focussed on simply drawing a line.
 
 [View the live examples here](https://ajwl.github.io/drawing-lines/)
 
