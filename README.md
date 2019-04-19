@@ -1,4 +1,4 @@
-# ps1
+# annaleach.net
 Site, blog
 
 To start app: `rackup config.ru`
