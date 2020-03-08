@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Forget special snowflake theory, Object Oriented programming caused identity politics'
+title: 'How software has changed how we think about identity'
 date: 2017-02-02 14:30:15.000000000 +01:00
 type: post
 published: true
