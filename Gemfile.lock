@@ -8,8 +8,7 @@ GEM
     daemons (1.2.4)
     eventmachine (1.2.1)
     ffi (1.9.14)
-    fileutils (0.7)
-      rmagick (>= 2.13.1)
+    fileutils (1.4.1)
     foreman (0.82.0)
       thor (~> 0.19.1)
     forwardable-extended (2.6.0)
@@ -57,7 +56,7 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
-    rmagick (2.13.4)
+    rmagick (4.1.2)
     rouge (1.11.1)
     safe_yaml (1.0.4)
     sass (3.4.22)
@@ -88,16 +87,16 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
-  fileutils (~> 0.7)
+  fileutils (~> 1.4)
   foreman
   hpricot
-  jekyll (= 3.2.1)
+  jekyll
   jekyll-docs
-  kramdown (~> 1.5.0)
+  kramdown
   open_uri_redirections
   rack-contrib
   rack-jekyll
-  rmagick (~> 2.13.1)
+  rmagick (~> 4.1, >= 4.1.2)
   rouge
   sequel
   serve
@@ -105,7 +104,7 @@ DEPENDENCIES
   thin
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.6.1p33
 
 BUNDLED WITH
-   1.13.6
+   1.17.3
