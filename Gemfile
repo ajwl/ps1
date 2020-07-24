@@ -1,17 +1,17 @@
 source "https://rubygems.org"
-ruby "2.3.1"
+ruby "2.6.1"
 
 gem 'sinatra'
 gem 'serve'
 
-gem 'jekyll', '3.2.1'
+gem 'jekyll'
 gem 'rack-jekyll'
 gem 'foreman'
 gem 'rack-contrib'
 gem 'thin'
 gem 'bundler'
 
-gem 'kramdown', "~>1.5.0"
+gem 'kramdown'
 gem 'rouge'
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -22,8 +22,8 @@ gem 'rouge'
 group :jekyll_plugins do
   gem "hpricot"
   gem "jekyll-docs"
-  gem "rmagick", "~> 2.13.1"
-  gem 'fileutils', '~> 0.7'
+  gem 'rmagick', '~> 4.1', '>= 4.1.2'
+  gem 'fileutils', "~> 1.4"
   gem 'open_uri_redirections'
   gem 'sequel'
 end
