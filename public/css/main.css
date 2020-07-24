@@ -1,0 +1,145 @@
+/* ---------------  SHARED ---------------  */
+
+@import url(code-highlighting.css);
+
+@font-face {
+  font-family: 'Roboto_Condensed';
+  src: url('../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+}
+html {
+  margin: 0;
+  height: 100%;
+}
+h1, h2, h3,
+h2 a,
+h3 a {
+  font-family: 'Roboto_Condensed', sans-serif;
+  text-decoration: none;
+}
+p, li,
+p a {
+  font-family: 'Open Sans', sans-serif;
+}
+h1 {
+  font-size: 3.5em;
+  margin: 0 0 .2em 0;
+}
+
+a svg:hover #twitter,
+a svg:hover #github,
+a svg:hover #linkedin {
+ fill: #cd32cd;
+}
+.excerpt .date{
+  font-size: .7em;
+  color: #828282;
+}
+.excerpt h3 {
+  margin-bottom: .1em;
+}
+.excerpt p {
+  margin-top: .1em;
+}
+
+body {
+  position: static;
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+}
+.container{
+  padding: 2em 0;
+  flex: 1 1 97%;
+  -webkit-flex: 1 1 97%;
+}
+.sidebar{
+  flex: 1 1 3%;
+  -webkit-flex: 1 1 3%;
+  background: repeating-linear-gradient(-45deg, #cd32cd, #cd32cd 5px, #3232cd 5px, #3232cd 10px);
+}
+.content {
+  margin: 0 20%;
+}
+
+a {
+  color: #cd32cd;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+header a{
+  text-decoration: none;
+}
+
+a:visited {
+  color: #3232cd;
+}
+
+header svg {
+  width: 1.5em;
+  padding-right: 1em;
+}
+
+@media(max-width:500px){
+  .content{
+    margin: 1% 5%;
+  }
+}
+
+/* ---------------  BLOG ---------------  */
+
+/* BLOG STYLES */
+
+.blog-post h1 {
+  font-size: 2.5em;
+  margin: 0 0 .2em 0;
+}
+.blog-post .meta {
+  margin: 0 20%;
+}
+.blog-post em {
+  display: block;
+  font-size: .7em;
+}
+
+/* BLOG HEADER */
+header #blog-title {
+  max-width: 4em;
+  margin-left: 5%;
+  position: fixed;
+  background-color: #3232cd;
+  padding: .2em;
+  transition: background-color .5s;
+  -webkit-transition: background-color .5s;
+}
+header #blog-title:hover {
+  background-color: #cd32cd;
+}
+
+header #blog-title a {
+  color: #ffffff;
+  font-family: 'Roboto_Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.blog-post section.content img {
+  max-width: 100%;
+}
+
+@media(max-width: 500px){
+  .blog-post .content {
+    margin: 1% 5%;
+  }
+  .blog-post .meta {
+    margin: 0 5%;
+  }
+  header #blog-title {
+    position: static;
+  }
+}

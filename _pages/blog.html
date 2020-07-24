@@ -1,0 +1,26 @@
+---
+layout: layout
+---
+<header>
+    <div id="blog-title">
+        <a href="{{ site.url }}">
+            ANNA
+            LEACH
+            SITE
+        </a>
+    </div>
+</header>
+
+<div class="content">
+
+    <h1>Blog Posts </h1>
+    <div class="related">
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+---
+---
+<ul class="excerpt">
+    {% for post in site.posts %}
+    {% if forloop.index < 4 %}
+    <li>
+        <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+        <span class="date">{{ post.date | date: "%B %e, %Y" }}</span>
+        {{ post.excerpt }}
+    </li>
+    {% endif %}
+    {% endfor %}
+</ul>

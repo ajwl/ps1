@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"
+              name="viewport"
+              content="width=device-width, initial-scale=1">
+        <title>
+            {% if page.title %}
+                {{ page.title }}
+            {% else %}
+                | Blog |
+            {% endif %}
+        </title>
+
+        <link rel="stylesheet" href="/css/main.css" type="text/css" media="screen, projection" />
+    </head>
+    <body class="blog-post">
+      <div class="sidebar"></div>
+      <div class="container">
+        {{ content }}
+      </div>
+
+    </body>
+</html>
